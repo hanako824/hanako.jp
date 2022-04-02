@@ -1,15 +1,21 @@
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    slidesPerGroup: 3,
+var swiper = new Swiper('.swiper', {
     loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+    slidesPerView: 3,
+    direction: getDirection(),
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    on: {
+      resize: function () {
+        swiper.changeDirection(getDirection());
+      },
     },
 });
+
+function getDirection() {
+    var windowWidth = window.innerWidth;
+    var direction = window.innerWidth <= 1170 ? 'vertical' : 'horizontal';
+
+    return direction;
+}
