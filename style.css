@@ -299,7 +299,7 @@ p {
 }
 .calendar{
     width: 100%;
-    display: none;
+    /* display: none; */
 }
 .calendar-container{
     width: 1540px;
@@ -311,11 +311,18 @@ p {
 }
 .calendar-container-main-head{
     display: flex;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 10px;
 }
 .calendar-container-main-head-item{
     width: 225px;
     height: 80px;
-    border: 1px solid black;
+    transition: all .3s ease;
+}
+.calendar-container-main-head-item:hover{
+    background: rgb(210, 210, 210, .2);
+    border-radius: 10px;
+    cursor: pointer;
 }
 .calendar-container-main-head-item-top{
     width: 100%;
