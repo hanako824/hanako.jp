@@ -19,3 +19,18 @@ function getDirection() {
 
   return direction;
 }
+
+;(()=>{
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+
+    let headerNav = document.querySelector('.header-nav')
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      headerNav.style.background = "rgb(70, 70, 70)";
+    } else {
+      headerNav.style.background = "";
+    }
+  }
+})()
