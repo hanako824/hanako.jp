@@ -628,7 +628,7 @@ p {
     background: rgb(210, 210, 210, .2);
 }
 .banner-container-main{
-    height: 400px;
+    height: 300px;
     width: 1540px;
     position: relative;
     overflow: auto;

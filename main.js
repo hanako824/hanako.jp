@@ -44,7 +44,11 @@ function getDirection() {
 
       if(x.scrollLeft >= 2860){
         setTimeout(() => {
-          x.scrollLeft = 0
+          let randomArr = [0, 410, 820]
+
+          let r = Math.floor(Math.random() * 3)
+
+          x.scrollLeft = randomArr[r]
         }, 3000);
       }
     }, 3000);
