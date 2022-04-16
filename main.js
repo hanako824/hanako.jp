@@ -34,3 +34,21 @@ function getDirection() {
     }
   }
 })()
+
+;(()=>{
+  let x = document.querySelector('.banner-container-main')
+
+  const handleScroll = function(){
+    setInterval(() => {
+      x.scrollLeft += 410
+
+      if(x.scrollLeft >= 2860){
+        setTimeout(() => {
+          x.scrollLeft = 0
+        }, 3000);
+      }
+    }, 3000);
+  }
+
+  handleScroll()
+})()
