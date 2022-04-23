@@ -96,45 +96,49 @@ p {
 .header-player{
     position: absolute;
     width: 100%;
-    height: 150px;
     bottom: 0;
     left: 0;
-    transform: translateY(-120%);
+    transform: translateY(-200%);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .header-player-container{
     width: 500px;
-    border-radius: 15px;
+    border-radius: 100rem;
     background: white;
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: .5rem 1rem .5rem 1rem;
+    position: relative;
 }
-.header-player-circle{
-    height: 60px;
+.header-player-container img{
     width: 60px;
-    border-radius: 100rem;
-    background: rgb(0, 153, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 60px;
+    animation: kaiten 4s infinite linear;
 }
 .header-player-circle-item{
-    height: 54px;
-    width: 54px;
-    border-radius: 100rem;
-    background: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem .5rem 1rem;
+}
+.header-player-circle-item-main{
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.header-player-circle-item img{
-    width: 45px;
-    animation: kaiten 3s infinite linear;
-    
+.header-player-circle-item-main img{
+    width: 42px;
+    height: 42px;
 }
 @keyframes kaiten {
     from{
@@ -143,6 +147,15 @@ p {
     to{
         transform: rotate(360deg);
     }
+}
+.header-marquee{
+    width: 380px;
+    height: 40px;
+    border-radius: 100rem;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* -------------- */
 .header-nav{
@@ -937,6 +950,15 @@ p {
     .topic-title{
         margin-left: 0;
         transform: translateX(-2.5%);
+    }
+    .header-player{
+        width: 100%;
+    }
+    .header-player-container{
+        width: 95%;
+    }
+    .header-marquee{
+        width: 80%;
     }
 }
 
