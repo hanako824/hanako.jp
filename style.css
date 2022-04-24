@@ -156,6 +156,18 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+.header-marquee-span{
+    animation: marquee 7s infinite linear;
+}
+@keyframes marquee {
+    from{
+        transform: translateX(150%);
+    }
+    to{
+        transform: translateX(-150%);
+    }
 }
 /* -------------- */
 .header-nav{
@@ -969,6 +981,11 @@ p {
     }
     .header-marquee{
         width: 80%;
+    }
+}
+@media (max-width: 420px){
+    .header-marquee-span{
+        font-size: 12px;
     }
 }
 
