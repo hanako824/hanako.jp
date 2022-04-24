@@ -177,7 +177,7 @@ p {
     width: 100%;
     height: 100px;
     color: white;
-    /* border-bottom: 2px solid white; */
+    background: rgb(80, 80, 80);
     z-index: 999999999999;
     display: flex;
     justify-content: space-between;
@@ -215,6 +215,22 @@ p {
 .header-nav-item:hover{
     cursor: pointer;
     opacity: .8;
+}
+.header-nav-plus{
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 450px;
+    background: white;
+    border-bottom: 3px solid rgb(70, 70, 70);
+    z-index: 1;
+    transform: translateY(-550px);
+    transition: all .6s ease;
+    z-index: 999;
+}
+.show{
+    transform: translateY(0);
 }
 .wrapper{
     width: 100%;
