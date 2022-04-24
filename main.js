@@ -56,3 +56,16 @@ function getDirection() {
 
   handleScroll()
 })()
+
+;(() => {
+  opened = false;
+  window.onload = function() {
+    let btn = document.querySelector('#navBtn')
+
+    btn.addEventListener('click', onBtnClick)
+  }
+
+  function onBtnClick(e) {
+    e.target.classList.toggle('opened');
+  }
+})()
