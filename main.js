@@ -89,6 +89,12 @@ function getDirection() {
 
   const modalIfame = document.querySelector('.myModal-container-video-i')
 
+  const slide = document.querySelectorAll('.swiper-slide')
+
+  const prev = document.querySelector('.myModal-container-bottom-prev')
+
+  const next = document.querySelector('.myModal-container-bottom-next')
+
   live.onclick = () => {
     modal.style.display = 'flex'
 
@@ -99,9 +105,32 @@ function getDirection() {
     modalIfame.src = videoLink
   }
 
+  slide.forEach(element => {
+    element.onclick = () => {
+
+      modal.style.display = 'flex'
+
+      modalTitle.innerHTML = 'アーカイブ'
+
+      modalBottom.style.justifyContent = 'center'
+
+      modalIfame.src = element.attributes.yLink.value
+
+      prev.style.display = 'flex'
+
+      next.style.display = 'flex'
+
+      modalBottom.style.justifyContent = 'space-between'
+    }
+  });
+
   close.onclick = () => {
     modal.style.display = 'none'
 
     modalIfame.src = ''
+
+    prev.style.display = 'none'
+
+    next.style.display = 'none'
   }
 })()
