@@ -57,15 +57,15 @@ function getDirection() {
   handleScroll()
 })()
 
-;(() => {
-  // opened = false;
+;(()=>{
+  const toggle = document.querySelector('#toggle')
 
-  const btn = document.querySelector('#navBtn')
+  const container = document.querySelector('.header-nav-item-container')
 
-  btn.onclick = (e) => {
+  toggle.onclick = () => {
     const x = document.querySelector('.header-nav-plus')
 
-    e.target.classList.toggle('opened')
+    container.classList.toggle('open-menu')
 
     x.classList.toggle('show')
   }
