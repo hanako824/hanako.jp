@@ -1,3 +1,8 @@
+// data
+const videoLink = 'https://www.youtube.com/embed/Uddh4TrCotY'
+
+
+// end
 var swiper = new Swiper('.swiper', {
     loop: true,
     slidesPerView: 3,
@@ -68,5 +73,35 @@ function getDirection() {
     container.classList.toggle('open-menu')
 
     x.classList.toggle('show')
+  }
+})()
+
+;(()=>{
+  const live = document.querySelector('#live')
+
+  const modal = document.querySelector('.myModal')
+
+  const close = document.querySelector('.myModal-container-bottom-close')
+
+  const modalTitle = document.querySelector('.myModal-container-title-contents')
+
+  const modalBottom = document.querySelector('.myModal-container-bottom')
+
+  const modalIfame = document.querySelector('.myModal-container-video-i')
+
+  live.onclick = () => {
+    modal.style.display = 'flex'
+
+    modalTitle.innerHTML = '生配信'
+
+    modalBottom.style.justifyContent = 'center'
+
+    modalIfame.src = videoLink
+  }
+
+  close.onclick = () => {
+    modal.style.display = 'none'
+
+    modalIfame.src = ''
   }
 })()
