@@ -1029,7 +1029,11 @@ p{
         margin: 0 1rem 0 1rem;
     }
 }
-
+@media (max-width: 900px) {
+    .header-nav-item{
+        display: none;
+    }
+}
 @media (max-width: 850px) {
     .swiper {
         width: 90%;
@@ -1085,9 +1089,6 @@ p{
     }
     .banner-container-main{
         width: 300px;
-    }
-    .header-nav-item{
-        display: none;
     }
     .header-nav{
         height: 70px;
