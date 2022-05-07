@@ -961,9 +961,6 @@ p{
 .myModal-container-bottom-prev:hover, .myModal-container-bottom-next:hover{
     cursor: pointer;
 }
-.fadeInUpTrigger{
-    opacity:0;
-}
 
 
 
