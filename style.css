@@ -111,6 +111,18 @@ p{
     justify-content: space-between;
     padding: .5rem 1rem .5rem 1rem;
     position: relative;
+    animation: xxx .4s alternate linear;
+}
+@keyframes xxx {
+    0%{
+        width: 500px;
+    }
+    50%{
+        width: 400px;
+    }
+    100%{
+        width: 600px;
+    }
 }
 .header-player-container img{
     width: 60px;
