@@ -38,7 +38,7 @@ function getDirection() {
       headerNav.style.background = "";
     }
   }
-})
+})()
 
 ;(()=>{
   let x = document.querySelector('.banner-container-main')
@@ -70,9 +70,21 @@ function getDirection() {
   menuTrigger.onclick = () => {
     const x = document.querySelector('.header-nav-plus')
 
+    let headerNav = document.querySelector('.header-nav')
+
     menuTrigger.classList.toggle('active')
 
     x.classList.toggle('show')
+
+    if(x.classList.length == 2){
+      headerNav.style.background = "rgb(70, 70, 70)";
+    }else{
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        headerNav.style.background = "rgb(70, 70, 70)";
+      } else {
+        headerNav.style.background = "";
+      }
+    }
   }
 })()
 
@@ -133,4 +145,8 @@ function getDirection() {
 
     next.style.display = 'none'
   }
+})()
+
+;(()=>{
+  
 })()

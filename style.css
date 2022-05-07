@@ -175,12 +175,12 @@ p{
     width: 100%;
     height: 100px;
     color: white;
-    background: rgb(80, 80, 80);
+    /* background: rgb(80, 80, 80); */
     z-index: 999999999999;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all .5s ease-out;
+    transition: all .3s ease-out;
 }
 .header-nav-logo{
     font-family: 'Playfair Display', serif;
@@ -961,7 +961,9 @@ p{
 .myModal-container-bottom-prev:hover, .myModal-container-bottom-next:hover{
     cursor: pointer;
 }
-
+.fadeInUpTrigger{
+    opacity:0;
+}
 
 
 
