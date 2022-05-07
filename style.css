@@ -1201,6 +1201,57 @@ p{
     .header-marquee{
         width: 80%;
     }
+    .menu-trigger {
+        width: 30px;
+        height: 20px;
+    }
+    .menu-trigger span:nth-of-type(2) {
+        top: 9px;
+    }
+    @keyframes menu-bar01 {
+        0% {
+        transform: translateY(9px) rotate(45deg);
+        }
+        50% {
+        transform: translateY(9px) rotate(0);
+        }
+        100% {
+        transform: translateY(0) rotate(0);
+        }
+    }
+    @keyframes menu-bar02 {
+        0% {
+        transform: translateY(-9px) rotate(-45deg);
+        }
+        50% {
+        transform: translateY(-9px) rotate(0);
+        }
+        100% {
+        transform: translateY(0) rotate(0);
+        }
+    }
+    @keyframes active-menu-bar01 {
+        0% {
+        transform: translateY(0) rotate(0);
+        }
+        50% {
+        transform: translateY(9px) rotate(0);
+        }
+        100% {
+        transform: translateY(9px) rotate(45deg);
+        }
+    }
+    @keyframes active-menu-bar03 {
+        0% {
+        transform: translateY(0) rotate(0);
+        }
+        50% {
+        transform: translateY(-9px) rotate(0);
+        }
+        100% {
+        transform: translateY(-9px) rotate(-45deg);
+        }
+    }
 }
 @media (max-width: 420px){
     .header-marquee-span{
