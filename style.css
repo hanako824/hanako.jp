@@ -1264,3 +1264,31 @@ p{
         display: flex;
     }
 }
+
+
+.title-h1-div{
+    animation: jumpUp .4s alternate linear;
+}
+@keyframes jumpUp {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+.d2{
+    animation-delay: 0.08s;
+}
+.d4{
+    animation-delay: 0.16s;
+}
+.d6{
+    animation-delay: 0.22s;
+}
+.d8{
+    animation-delay: 0.28s;
+}
