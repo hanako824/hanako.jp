@@ -63,14 +63,14 @@ function getDirection() {
 })()
 
 ;(()=>{
-  const toggle = document.querySelector('#toggle')
+  const menuTrigger = document.querySelector('.menu-trigger')
 
   const container = document.querySelector('.header-nav-item-container')
 
-  toggle.onclick = () => {
+  menuTrigger.onclick = () => {
     const x = document.querySelector('.header-nav-plus')
 
-    container.classList.toggle('open-menu')
+    menuTrigger.classList.toggle('active')
 
     x.classList.toggle('show')
   }
