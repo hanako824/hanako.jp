@@ -1289,18 +1289,30 @@ p{
         transform: translateY(-40px);
     }
     100%{
-        transform: translateY(10px);
+        transform: translateY(15px);
     }
 }
-.d2{
+.d1{
     animation-delay: 0.08s;
 }
-.d4{
+.d2{
     animation-delay: 0.16s;
 }
-.d6{
+.d3{
     animation-delay: 0.22s;
 }
-.d8{
+.d4{
     animation-delay: 0.28s;
+}
+.d5{
+    animation-delay: 0.34s;
+}
+.d6{
+    animation-delay: 0.40s;
+}
+.d7{
+    animation-delay: 0.46s;
+}
+.d8{
+    animation-delay: 0.52s;
 }
