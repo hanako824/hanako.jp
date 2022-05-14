@@ -216,11 +216,11 @@
                 <div class="topic-title mb-3">
                     <h1 class="ms-3">
                         <div style="display: flex;">
-                            <div class="title-h1-div">T</div>
-                            <div class="title-h1-div d2">O</div>
-                            <div class="title-h1-div d4">P</div>
-                            <div class="title-h1-div d6">I</div>
-                            <div class="title-h1-div d8">C</div>
+                            <div class="z">T</div>
+                            <div class="z d1">O</div>
+                            <div class="z d2">P</div>
+                            <div class="z d3">I</div>
+                            <div class="z d4">C</div>
                         </div>
                     </h1>
                 </div>
@@ -322,7 +322,17 @@
                     <div>
                         <a style="cursor: default;" href="https://www.flaticon.com/free-icons/music" title="music icons" target="__blank"><img src="./img/music.png"></a>
                     </div>
-                    <h1>ARCHIVE</h1>
+                    <h1 class="ms-3">
+                        <div style="display: flex;">
+                            <div class="z">A</div>
+                            <div class="z d1">R</div>
+                            <div class="z d2">C</div>
+                            <div class="z d3">H</div>
+                            <div class="z d4">I</div>
+                            <div class="z d5">V</div>
+                            <div class="z d6">E</div>
+                        </div>
+                    </h1>
                 </div>
 
                 <div class="swiper-container">
@@ -501,7 +511,18 @@
         <div class="calendar mt-4">
             <div class="calendar-container">
                 <div class="title mb-4">
-                    <h1 class="ms-3">CALENDAR</h1>
+                    <h1 class="ms-3">
+                        <div style="display: flex;">
+                            <div class="z">C</div>
+                            <div class="z d1">A</div>
+                            <div class="z d2">L</div>
+                            <div class="z d3">E</div>
+                            <div class="z d4">N</div>
+                            <div class="z d5">D</div>
+                            <div class="z d6">A</div>
+                            <div class="z d7">R</div>
+                        </div>
+                    </h1>
                 </div>
 
                 <div class="calendar-container-main">
@@ -736,7 +757,19 @@
         <!-- Link -->
         <div class="link mt-3">
             <div class="title mb-3 ms-3">
-                <h1 class="ms-3">SNS アカウント</h1>
+                <h1 class="ms-3">
+                    <div style="display: flex;">
+                        <div class="z">S</div>
+                        <div class="z d1">N</div>
+                        <div class="z d2">S</div>
+                        <div>&nbsp;</div>
+                        <div class="z d3">ア</div>
+                        <div class="z d4">カ</div>
+                        <div class="z d5">ウ</div>
+                        <div class="z d6">ン</div>
+                        <div class="z d7">ト</div>
+                    </div>
+                </h1>
             </div>
 
             <div class="link-container">
@@ -845,7 +878,14 @@
         <!-- News -->
         <div class="news mt-4">
             <div class="title mb-4">
-                <h1 class="ms-3">お知らせ</h1>
+                <h1 class="ms-3">
+                    <div style="display: flex;">
+                        <div class="z">お</div>
+                        <div class="z d1">知</div>
+                        <div class="z d2">ら</div>
+                        <div class="z d3">せ</div>
+                    </div>
+                </h1>
             </div>
 
             <div class="new-container">
@@ -908,7 +948,16 @@
         <!-- Banner -->
         <div class="banner mt-4">
             <div class="title mb-4 ms-3">
-                <h1 class="ms-3">バナー</h1>
+                <h1 class="ms-3">
+                    <div style="display: flex;">
+                        <div class="z">B</div>
+                        <div class="z d1">A</div>
+                        <div class="z d2">N</div>
+                        <div class="z d3">N</div>
+                        <div class="z d4">E</div>
+                        <div class="z d5">R</div>
+                    </div>
+                </h1>
             </div>
 
             <div class="banner-container">
@@ -962,4 +1011,16 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="main.js"></script>
 <script src="https://kit.fontawesome.com/aeadcca70a.js" crossorigin="anonymous"></script>
+<script src="./jquery/jquery.inview.min.js"></script>
+<script>
+    $(function() {
+      $('.z').on('inview', function(event, isInView){
+        if (isInView) {
+            $(this).addClass('title-h1-div');
+        } else {
+            $(this).removeClass('title-h1-div');
+        }
+      });
+    });
+</script>
 </html>
