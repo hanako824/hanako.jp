@@ -65,18 +65,17 @@ function getDirection() {
 ;(()=>{
   const menuTrigger = document.querySelector('.menu-trigger')
 
-  const container = document.querySelector('.header-nav-item-container')
-
   menuTrigger.onclick = () => {
-    const x = document.querySelector('.header-nav-plus')
 
-    let headerNav = document.querySelector('.header-nav')
+    const navPlus = document.querySelector('.header-nav-plus')
+
+    const headerNav = document.querySelector('.header-nav')
 
     menuTrigger.classList.toggle('active')
 
-    x.classList.toggle('show')
+    navPlus.classList.toggle('show')
 
-    if(x.classList.length == 2){
+    if(navPlus.classList.length == 2){
       headerNav.style.background = "rgb(70, 70, 70)";
     }else{
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -128,11 +127,11 @@ function getDirection() {
 
       modalIfame.src = element.attributes.yLink.value
 
-      prev.style.display = 'flex'
+      // prev.style.display = 'flex'
 
-      next.style.display = 'flex'
+      // next.style.display = 'flex'
 
-      modalBottom.style.justifyContent = 'space-between'
+      // modalBottom.style.justifyContent = 'space-between'
     }
   });
 

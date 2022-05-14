@@ -208,6 +208,9 @@ p{
     display: flex;
     align-items: center;
 }
+.header-nav-items a{
+    text-decoration: none;
+}
 .header-nav-item{
     margin-right: 2rem;
     border: 1px solid rgb(58, 164, 183);
@@ -234,7 +237,6 @@ p{
     height: 400px;
     background: white;
     border-bottom: 3px solid rgb(70, 70, 70);
-    z-index: 1;
     transform: translateY(-550px);
     transition: all .6s ease;
     z-index: 999;
@@ -640,6 +642,9 @@ p{
 .calendar-container-main-body-container-right-personality-item-des a:hover{
     color: rgba(58, 164, 183, 0.8);
 }
+.calendar-container-more-a{
+    text-decoration: none;
+}
 .calendar-container-more{
     padding: 20px 0 20px 0;
     width: 100%;
@@ -713,6 +718,13 @@ p{
     display: flex;
     align-items: center;
     position: relative;
+}
+.link-container-main a{
+    text-decoration: none;
+    color: black;
+}
+.link-container-main a:hover{
+    color: black;
 }
 .link-container-main-title{
     position: absolute;
