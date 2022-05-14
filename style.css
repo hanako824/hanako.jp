@@ -443,7 +443,7 @@ p{
 }
 .archive{
     width: 100%;
-    /* text-align: center; */
+    text-align: center;
 }
 .archive-container-title{
     display: flex;
