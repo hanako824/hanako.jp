@@ -788,7 +788,7 @@ p{
     color: black;
 }
 .link-container-main a:hover{
-    color: black;
+    color: rgb(58, 164, 183);
 }
 .link-container-main-title{
     position: absolute;
@@ -836,6 +836,13 @@ p{
     display: none;
     justify-content: center;
     align-items: center;
+}
+.link-container-main-mobile a{
+    text-decoration: none;
+    color: black;
+}
+.link-container-main-mobile a:hover{
+    color: rgb(58, 164, 183);
 }
 .link-container-main-item-mobile{
     width: 130px;
