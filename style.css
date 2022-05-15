@@ -131,7 +131,12 @@ p{
         width: 600px;
     }
 }
-.header-player-container img{
+.header-player-circle-item-main-img{
+    width: 60px;
+    height: 60px;
+    /* animation: kaiten 4s infinite linear; */
+}
+.header-player-container-background{
     width: 60px;
     height: 60px;
     animation: kaiten 4s infinite linear;
