@@ -216,6 +216,14 @@ p{
     cursor: pointer;
     opacity: .8;
 }
+.header-nav-logo-a{
+    text-decoration: none;
+    color: white;
+}
+.header-nav-logo-a:hover{
+    opacity: .8;
+    color: white;
+}
 .header-nav-items{
     display: flex;
     align-items: center;
