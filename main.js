@@ -1,7 +1,6 @@
 // data
 const videoLink = 'https://www.youtube.com/embed/Uddh4TrCotY'
 
-
 // end
 var swiper = new Swiper('.swiper', {
     loop: true,
@@ -65,15 +64,19 @@ function getDirection() {
 ;(()=>{
   const menuTrigger = document.querySelector('.menu-trigger')
 
+  const navPlus = document.querySelector('.header-nav-plus')
+
+  const navPlusM = document.querySelector('.header-nav-plus-mobile')
+
+  const headerNav = document.querySelector('.header-nav')
+
   menuTrigger.onclick = () => {
-
-    const navPlus = document.querySelector('.header-nav-plus')
-
-    const headerNav = document.querySelector('.header-nav')
 
     menuTrigger.classList.toggle('active')
 
     navPlus.classList.toggle('show')
+
+    navPlusM.classList.toggle('show')
 
     if(navPlus.classList.length == 2){
       headerNav.style.background = "rgb(70, 70, 70)";
@@ -109,7 +112,7 @@ function getDirection() {
   live.onclick = () => {
     modal.style.display = 'flex'
 
-    modalTitle.innerHTML = '生配信'
+    modalTitle.innerHTML = 'Youtube 配信'
 
     modalBottom.style.justifyContent = 'center'
 
@@ -144,8 +147,4 @@ function getDirection() {
 
     next.style.display = 'none'
   }
-})()
-
-;(()=>{
-  
 })()
