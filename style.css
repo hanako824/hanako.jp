@@ -268,6 +268,13 @@ p{
     margin-bottom: 1rem;
     font-weight: 500;
 }
+.___-item a{
+    text-decoration: none;
+    color: black;
+}
+.___-item a:hover{
+    color: rgb(58, 164, 183);
+}
 .___-link{
     display: flex;
     margin-bottom: 1.3rem;
@@ -313,6 +320,13 @@ p{
 .___-item-mobile{
     margin-bottom: .5rem;
     font-weight: 500;
+}
+.___-item-mobile a{
+    text-decoration: none;
+    color: black;
+}
+.___-item-mobile a:hover{
+    color: rgb(58, 164, 183);
 }
 .___-link-mobile{
     display: flex;
