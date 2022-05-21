@@ -1367,6 +1367,13 @@ p{
         transform: translateY(-9px) rotate(-45deg);
         }
     }
+
+    :target:before {
+        content: "";
+        display: inline-block;
+        height: 300px;
+        margin: -230px 0 0;
+    }
 }
 @media (max-width: 474px){
     .header-nav-plus{

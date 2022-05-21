@@ -1,7 +1,7 @@
 // data
 const videoLink = 'https://www.youtube.com/embed/Uddh4TrCotY'
 
-// end
+// Swiper
 var swiper = new Swiper('.swiper', {
     loop: true,
     slidesPerView: 3,
@@ -17,6 +17,7 @@ var swiper = new Swiper('.swiper', {
     },
 });
 
+// Wave
 function getDirection() {
   var windowWidth = window.innerWidth;
   var direction = window.innerWidth <= 1170 ? 'vertical' : 'horizontal';
@@ -24,6 +25,7 @@ function getDirection() {
   return direction;
 }
 
+// Header
 function handleToggle(){
   const menuTrigger = document.querySelector('.menu-trigger')
 
@@ -50,6 +52,7 @@ function handleToggle(){
   }
 }
 
+// Scroll Header
 ;(() => {
   window.onscroll = function() {scrollFunction()};
 
@@ -65,6 +68,7 @@ function handleToggle(){
   }
 })()
 
+// Banner
 ;(() => {
   let x = document.querySelector('.banner-container-main')
 
@@ -87,6 +91,7 @@ function handleToggle(){
   handleScroll()
 })()
 
+// Nav Plus
 ;(() => {
   const menuTrigger = document.querySelector('.menu-trigger')
 
@@ -116,6 +121,7 @@ function handleToggle(){
   }
 })()
 
+// Video
 ;(() => {
   const live = document.querySelector('#live')
 
@@ -175,6 +181,7 @@ function handleToggle(){
   }
 })()
 
+// Calendar
 ;(() => {
   const now = new Date();
 
