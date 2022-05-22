@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113616162-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-113616162-1');
+        </script>
+        <script>
+        $(function() {
+            var $children = $('.children');
+            var original = $children.html();
+
+            $('.parent').change(function() {
+            var val1 = $(this).val();
+
+            $children.html(original).find('option').each(function() {
+                var val2 = $(this).data('val');
+                if (val1 != val2) {
+                $(this).not('optgroup,.msg').remove();
+                }
+            });
+
+            if ($(this).val() === '') {
+                $children.attr('disabled', 'disabled');
+            } else {
+                $children.removeAttr('disabled');
+            }
+
+            });
+        });
+        </script>
+        <script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+        <!-- ///////////// -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <title>FM HANAKO 82.4</title>
+    </head>
+
+    <body cz-shortcut-listen="true">
+        <!--Header start-->
+        <div class="header-nav" style="background: rgb(80, 80, 80) !important;">
+            <a href="../index.html" class="header-nav-logo-a">
+                <div class="header-nav-logo">
+                    <div style="display: flex;">
+                        <div class="title-h1-div d1">F</div>
+                        <div class="title-h1-div d2">M</div>
+                        <div>&nbsp;</div>
+                        <div class="title-h1-div d3">H</div>
+                        <div class="title-h1-div d4">A</div>
+                        <div class="title-h1-div d5">N</div>
+                        <div class="title-h1-div d6">A</div>
+                        <div class="title-h1-div d7">K</div>
+                        <div class="title-h1-div d8">O</div>
+                    </div>
+                </div>
+            </a>
+
+            <div class="header-nav-items">
+                <a href="../calendar.html"><div class="header-nav-item">
+                    番組表
+                </div></a>
+
+                <div class="header-nav-item">
+                    リクエスト
+                </div>
+
+                <div class="header-nav-item-container">
+                    <button class="menu-trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-nav-plus">
+            <div class="header-nav-plus-item">
+                <div class="header-nav-plus-item-container">
+                    <div class="___-title">
+                        <i class="fa-solid fa-arrow-down-a-z"></i>&nbsp;Contents
+                    </div>
+
+                    <div class="___-item">
+                        <a href="../index.html#topic" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; Topic</a>
+                    </div>
+
+                    <div class="___-item">
+                        <a href="../index.html#archive" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; アーカイブ</a>
+                    </div>
+
+                    <div class="___-item">
+                        <a href="../calendar.html" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; 番組表</a>
+                    </div>
+
+                    <div class="___-item">
+                        <a href="../index.html#sns" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; SNS アカウント</a>
+                    </div>
+
+                    <div class="___-item">
+                        <a href="../index.html#news" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; お知らせ</a>
+                    </div>
+
+                    <div class="___-item">
+                        <a href="../index.html#banner" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; バナー</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-nav-plus-item">
+                <div class="header-nav-plus-item-container">
+                    <div class="___-title">
+                        <i class="fa-solid fa-building"></i>&nbsp;Company
+                    </div>
+
+                    <div class="___-item">
+                        <a><i class="fa-solid fa-angle-right"></i> &nbsp; 会社概要</a>
+                    </div>
+
+                    <div class="___-item">
+                        <a><i class="fa-solid fa-angle-right"></i> &nbsp; 番組審議会</a>
+                    </div>
+
+                    <div class="___-item">
+                        <a><i class="fa-solid fa-angle-right"></i> &nbsp; エリア</a>
+                    </div>
+
+                    <div class="___-item">
+                        <a><i class="fa-solid fa-angle-right"></i> &nbsp; 決算公告</a>
+                    </div>
+
+                    <div class="___-item">
+                        <a><i class="fa-solid fa-angle-right"></i> &nbsp; 個人情報保護基本方針</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-nav-plus-item">
+                <div class="header-nav-plus-item-container">
+                    <div class="___-title">
+                        <i class="fa-solid fa-icons"></i>&nbsp;Social Media
+                    </div>
+
+                    <div class="___-link">
+                        <div class="___-link-item">
+                            <a href="https://www.facebook.com/FM-HANAKO-824MHz-118094781711098/?ref=bookmarks" target="_blank"><i class="fa-brands fa-facebook" style="color: #1876f2;"></i></a>
+                        </div>
+
+                        <div class="___-link-item">
+                            <a href="https://twitter.com/FM_HANAKO" target="_blank"><i class="fa-brands fa-twitter" style="color: #1d9bf0;"></i></a>
+                        </div>
+
+                        <div class="___-link-item">
+                            <a href="https://www.youtube.com/channel/UCn_yT7Dyb97dkrTIjsuME9A" target="_blank"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></a>
+                        </div>
+
+                        <div class="___-link-item">
+                            <a href=""><i class="fa-solid fa-book-open" style="color: #00b478;"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="___-item">
+                        <a href="../index.html"><i class="fa-solid fa-angle-right"></i> &nbsp; ホーム</a>
+                    </div>
+
+                    <div class="___-item">
+                        <a><i class="fa-solid fa-angle-right"></i> &nbsp; リクエスト</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-nav-plus-mobile">
+            <div class="header-nav-plus-mobile-container">
+                <div class="header-nav-plus-mobile-container-item">
+                    <div class="___-title-mobile">
+                        <i class="fa-solid fa-arrow-down-a-z"></i>&nbsp;Contents
+                    </div>
+                    <div class="___-item-mobile">
+                        <a href="../index.html#topic" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; Topic</a>
+                    </div>
+        
+                    <div class="___-item-mobile">
+                        <a href="../index.html#archive" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; アーカイブ</a>
+                    </div>
+        
+                    <div class="___-item-mobile">
+                        <a href="../index.html#calendar" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; 番組表</a>
+                    </div>
+        
+                    <div class="___-item-mobile">
+                        <a href="../index.html#sns" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; SNS アカウント</a>
+                    </div>
+        
+                    <div class="___-item-mobile">
+                        <a href="../index.html#news" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; お知らせ</a>
+                    </div>
+        
+                    <div class="___-item-mobile">
+                        <a href="../index.html#banner" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; バナー</a>
+                    </div>
+                </div>
+
+                <div class="header-nav-plus-mobile-container-item">
+                    <div class="___-title-mobile">
+                        <i class="fa-solid fa-building"></i>&nbsp;Company
+                    </div>
+
+                    <div class="___-item-mobile">
+                        <a><i class="fa-solid fa-angle-right"></i> &nbsp; 会社概要</a>
+                    </div>
+
+                    <div class="___-item-mobile">
+                        <a><i class="fa-solid fa-angle-right"></i> &nbsp; 番組審議会</a>
+                    </div>
+
+                    <div class="___-item-mobile">
+                        <a><i class="fa-solid fa-angle-right"></i> &nbsp; エリア</a>
+                    </div>
+
+                    <div class="___-item-mobile">
+                        <a><i class="fa-solid fa-angle-right"></i> &nbsp; 決算公告</a>
+                    </div>
+
+                    <div class="___-item-mobile">
+                        <a><i class="fa-solid fa-angle-right"></i> &nbsp; 個人情報保護基本方針</a>
+                    </div>
+                </div>
+
+                <div class="header-nav-plus-mobile-container-item">
+                    <div class="___-title-mobile">
+                        <i class="fa-solid fa-icons"></i>&nbsp;Social Media
+                    </div>
+
+                    <div class="___-link-mobile">
+                        <div class="___-link-item-mobile">
+                            <a href="https://www.facebook.com/FM-HANAKO-824MHz-118094781711098/?ref=bookmarks" target="_blank"><i class="fa-brands fa-facebook" style="color: #1876f2;"></i></a>
+                        </div>
+
+                        <div class="___-link-item-mobile">
+                            <a href="https://twitter.com/FM_HANAKO" target="_blank"><i class="fa-brands fa-twitter" style="color: #1d9bf0;"></i></a>
+                        </div>
+
+                        <div class="___-link-item-mobile">
+                            <a href="https://www.youtube.com/channel/UCn_yT7Dyb97dkrTIjsuME9A" target="_blank"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></a>
+                        </div>
+
+                        <div class="___-link-item-mobile">
+                            <a href=""><i class="fa-solid fa-book-open" style="color: #00b478;"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="___-item-mobile">
+                        <a href="../index.html"><i class="fa-solid fa-angle-right"></i> &nbsp; ホーム</a>
+                    </div>
+
+                    <div class="___-item-mobile">
+                        <a><i class="fa-solid fa-angle-right"></i> &nbsp; リクエスト</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Header ends-->
+
+        <div class="middle">
+            <div class="middle-form">
+                <div class="form-container">
+                    <section>
+                        <div id="mainbox">
+                            <div id="mailform">
+                                <div id="form">
+                                    <form action="./postmail-utf/postmail.cgi" method="POST">
+                                        <dl class="tbl-mail">
+                                            <!-- 番組名 -->
+                                            <dt class="req-head">番組名</dt>
+                                            <dd style="margin-bottom: 1.5rem;">
+                                                <select id="bangumi" name="番組名" class="parent mySelect"  style="width: 100%; border: none; border-bottom: 1px solid rgb(100, 100, 100, 0.2);">
+                                                    <!-- <option value="" class="msg" disabled selected>番組名を選んでください</option> -->
+                                                    <option value="&nbsp;" disabled>&nbsp;</option>
+                                                    <option value="さわやかワイド824" selected>さわやかワイド824</option>
+                                                    <option value="プロムナード824">プロムナード824</option>
+                                                    <option value="しあわせ歌ＢＯＸ">しあわせ歌ＢＯＸ</option>
+                                                    <option value="そんな☆あきっすん">そんな☆あきっすん</option>
+                                                    <option value="原みどりとくーみんの歌好きパラダイス">原みどりとくーみんの歌好きパラダイス</option>
+                                                    <option value="守口門真JCのモカチャンネル">守口門真JCのモカチャンネル</option>
+                                                    <option value="田畑実和のうたいろレター">田畑実和のうたいろレター</option>
+                                                    <option value="川口哲也の演歌街道">川口哲也の演歌街道</option>
+                                                    <option value="守成クラブ京阪守口プレゼンツ仕事バンバンRADIO">守成クラブ京阪守口プレゼンツ仕事バンバンRADIO</option>
+                                                    <option value="夢香とDREAM MUSIC">夢香とDREAM MUSIC</option>
+                                                    <option value="Waku♬Waku♬MoneyLife">Waku♬Waku♬MoneyLife</option>
+                                                    <option value="ヘルマンハープ梶原千沙都です">ヘルマンハープ梶原千沙都です</option>
+                                                    <option value="七瀬美菜のトントンタイム">七瀬美菜のトントンタイム</option>
+                                                    <option value="ゆっきぃのイケてる？ラジヲ">ゆっきぃのイケてる？ラジヲ</option>
+                                                    <option value="光岡洋と歌仲間・絆">光岡洋と歌仲間・絆</option>
+                                                    <option value="FUN!FUN!シネルフレ">FUN!FUN!シネルフレ</option>
+                                                    <option value="哲ちゃんの哲学">哲ちゃんの哲学</option>
+                                                    <option value="こひなあすかのオタさいふぁ">こひなあすかのオタさいふぁ</option>
+                                                    <option value="バン子の繋ごう!愛のバトン">バン子の繋ごう!愛のバトン</option>
+                                                    <option value="宇田祥次　一筋の道">宇田祥次　一筋の道</option>
+                                                    <option value="桂三馬枝の「出会いは宝」">桂三馬枝の「出会いは宝」</option>
+                                                    <option value="メイドイン O.I.U">メイドイン O.I.U</option>
+                                                    <option value="FACE to FACE MUSIC WORKSHOP">FACE to FACE MUSIC WORKSHOP</option>
+                                                </select>
+                                            </dd>
+                                            
+                                            <!-- パーソナリティ -->
+                                            <dt class="req-head">パーソナリティ</dt>
+                                            <dd style="margin-bottom: 1.5rem;">
+                                                <select id="personality" name="パーソナリティ" class="children mySelect"  style="width: 100%; border: none; border-bottom: 1px solid rgb(100, 100, 100, 0.2);">
+                                                    <!-- <option value="" class="msg" disabled selected>番組名を選んでください</option> -->
+                                                    <option value="&nbsp;" disabled>&nbsp;</option>
+                                                    <option value="三宅奈緒子" selected>三宅奈緒子</option>
+                                                    <option value="光岡洋">光岡洋</option>
+                                                    <option value="栄田慶子">栄田慶子</option>
+                                                    <option value="宇田祥次">宇田祥次</option>
+                                                    <option value="桂三馬枝">桂三馬枝</option>
+                                                    <option value="藤田明美">藤田明美</option>
+                                                    <option value="林亜由子">林亜由子</option>
+                                                    <option value="倉田かな">倉田かな</option>
+                                                    <option value="ターキー">ターキー</option>
+                                                    <option value="川口哲也">川口哲也</option>
+                                                    <option value="川中博子">川中博子</option>
+                                                    <option value="南野智香">南野智香</option>
+                                                    <option value="大槻直美">大槻直美</option>
+                                                    <option value="大西愛奈">大西愛奈</option>
+                                                    <option value="大内康弘">大内康弘</option>
+                                                    <option value="七瀬美菜">七瀬美菜</option>
+                                                    <option value="高藤俊行">高藤俊行</option>
+                                                    <option value="あきっすん">あきっすん</option>
+                                                    <option value="加美川千尋">加美川千尋</option>
+                                                    <option value="梶原千沙都">梶原千沙都</option>
+                                                    <option value="夢香・島津健">夢香・島津健</option>
+                                                    <option value="原みどり・くーみん">原みどり・くーみん</option>
+                                                    <option value="前野彩・鹿野佐代子">前野彩・鹿野佐代子</option>
+                                                    <option value="こひなあすか・むらや">こひなあすか・むらや</option>
+                                                    <option value="河田真喜子・伊藤久美子・三木佐栄子">河田真喜子・伊藤久美子・三木佐栄子</option>
+                                                    <option value="疋田哲夫・辰寿広美・オフィス自由本舗">疋田哲夫・辰寿広美・オフィス自由本舗</option>
+                                                </select>
+                                            </dd>
+                                            
+                                            <!-- ラジオネーム -->
+                                            <dt class="req-head">ラジオネーム</dt>
+                                            <dd style="margin-bottom: 1.5rem;">
+                                                <input autocomplete="off" spellcheck="false" required class="req-input" type="text" name="ラジオネーム">
+                                            </dd>
+                                            
+                                            <!-- メールアドレス -->
+                                            <dt class="req-head">メールアドレス</dt>
+                                            <dd style="margin-bottom: 1.5rem;">
+                                                <input autocomplete="off" spellcheck="false" required class="req-input" type="text" name="e-mail">
+                                            </dd>
+                                            
+                                            <!-- 名前 -->
+                                            <dt class="req-head">名前<span style="color: rgb(170, 170, 170);"> (任意)</span></dt>
+                                            <dd style="margin-bottom: 1.5rem;">
+                                                <input autocomplete="off" spellcheck="false" class="req-input" type="text" name="名前">
+                                            </dd>
+                                            
+                                            <!-- 性別 -->
+                                            <dt class="req-head">性別<span style="color: rgb(170, 170, 170);"> (任意)</span></dt>
+                                            <dd style="margin-bottom: 1.5rem;">
+                                                <input autocomplete="off" spellcheck="false" class="req-input" type="text" name="性別">
+                                            </dd>
+                                            
+                                            <!-- 住所 -->
+                                            <dt class="req-head">住所<span style="color: rgb(170, 170, 170);"> (任意)</span></dt>
+                                            <dd style="margin-bottom: 1.5rem;">
+                                                <input autocomplete="off" spellcheck="false" class="req-input" type="text" name="住所">
+                                            </dd>
+                                            
+                                            <!-- 電話番号 -->
+                                            <dt class="req-head">電話番号<span style="color: rgb(170, 170, 170);"> (任意)</span></dt>
+                                            <dd style="margin-bottom: 1.5rem;">
+                                                <input autocomplete="off" spellcheck="false" class="req-input" type="text" name="TEL">
+                                            </dd>
+                                            
+                                            <!-- コメント -->
+                                            <dt class="req-head">コメント</dt>
+                                            <dd style="margin-bottom: 1.5rem;">
+                                                <textarea class="req-cmt" name="コメント" cols="30" rows="5"></textarea>
+                                            </dd>
+                                        </dl>
+                    
+                                        <p class="send-button">
+                                            <button type="submit" class="btn btn-outline-success" value="送　信">送　信</button>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="footer">
+                © 2022 FM HANAKO 82.4. All rights reserved.
+            </div>
+        </div>    
+    </body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="req.js"></script>
+<script src="https://kit.fontawesome.com/aeadcca70a.js" crossorigin="anonymous"></script>
+<script src="./jquery/jquery.inview.min.js"></script>
+<script>
+    $(function() {
+      $('.z').on('inview', function(event, isInView){
+        if (isInView) {
+            $(this).addClass('title-h1-div');
+        } else {
+            $(this).removeClass('title-h1-div');
+        }
+      });
+    });
+</script>
+</html>
