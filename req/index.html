@@ -1,0 +1,217 @@
+<html>
+    
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113616162-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-113616162-1');
+</script>
+
+<meta charset="utf-8">
+<title>FM HANAKO 82.4MHz メッセージ・リクエストフォーム</title>
+<script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="request.css" type="text/css">
+
+<script>
+$(function() {
+  var $children = $('.children');
+  var original = $children.html();
+
+  $('.parent').change(function() {
+    var val1 = $(this).val();
+
+    $children.html(original).find('option').each(function() {
+      var val2 = $(this).data('val');
+      if (val1 != val2) {
+        $(this).not('optgroup,.msg').remove();
+      }
+    });
+
+    if ($(this).val() === '') {
+      $children.attr('disabled', 'disabled');
+    } else {
+      $children.removeAttr('disabled');
+    }
+
+  });
+});
+</script>
+
+</head>
+
+
+<body cz-shortcut-listen="true">
+
+    
+<section id="h_logo">
+    <p><img src="../images/sp_head.jpg" width="100%"></p>
+</section>
+
+
+<section>
+    
+    <div id="mainbox">
+    <h1><i class="fas fa-mail-bulk"></i>メッセージ・リクエスト</h1>
+
+    <p>メッセージ・リクエストは番組の構成上や時間の都合などにより、ご紹介またはお応えできない場合があります。</p>
+    <p>各項目に記入して送信ボタンを押してください。<br>
+※は必須項目</p>
+
+
+<div id="mailform">
+
+<div id="form">
+<form action="./postmail-utf/postmail.cgi" method="POST">
+<dl class="tbl-mail">
+<input type="hidden" name="フォーム" value="リクエスト">
+<input type="hidden" name="cc" value="0">
+<dt>リクエスト曲</dt>
+<dd><input type="text" name="リクエスト曲"></dd>
+
+<dt>アーティスト名</dt>
+<dd><input type="text" name="アーティスト名"></dd>
+
+<dt>番組　※</dt>
+<dd>              <select name="番組" class="parent" required>
+                    <option value="" class="msg" disabled selected>▼（番組名を選んでください）</option>
+                    <option value="さわやかワイド824！">さわやかワイド824！</option>
+                    <option value="プロムナード824">プロムナード824</option>
+                    <option value="しあわせ歌ＢＯＸ">しあわせ歌ＢＯＸ</option>
+                    <option value="そんな☆あきっすん">そんな☆あきっすん</option>
+                    <option value="原みどりとくーみんの歌好きパラダイス">原みどりとくーみんの歌好きパラダイス</option>
+                    <option value="守口門真JCのモカチャンネル">守口門真JCのモカチャンネル</option>
+                    <option value="田畑実和のうたいろレター">田畑実和のうたいろレター</option>
+                    <option value="川口哲也の演歌街道">川口哲也の演歌街道</option>
+                    <option value="仕事バンバンRadio">仕事バンバンRadio</option>
+                    <option value="石山雅雄のぴあの大好き">石山雅雄のぴあの大好き</option>
+                    <option value="夢香とDREAM MUSIC">夢香とDREAM MUSIC</option>
+                    <option value="ゆっきぃのイケてるラジヲ">ゆっきぃのイケてるラジヲ</option>
+                    <option value="Waku Waku MoneyLife">Waku Waku MoneyLife</option>
+                    <option value="七瀬美菜のトントンタイム">七瀬美菜のトントンタイム</option>
+                    <option value="光岡洋と歌仲間・絆">光岡洋と歌仲間・絆</option>
+                    <option value="FUN!FUN!シネルフレ">FUN!FUN!シネルフレ</option>
+                    <option value="哲ちゃんの哲学">哲ちゃんの"哲学"</option>
+                    <option value="こひなあすかのオタさいふぁ">こひなあすかのオタさいふぁ</option>
+                    <option value="バン子の繋ごう！愛のバトン">バン子の繋ごう！愛のバトン</option>
+                    <option value="OIUラジオ放送部">OIUラジオ放送部</option>
+                    <option value="宇田祥次　一筋の道">宇田祥次　一筋の道</option>
+                    <option value="桂三馬枝の「出会いは宝」">桂三馬枝の「出会いは宝」</option>
+                    <option value="年の瀬・新春ワイド824！">年の瀬・新春ワイド824！</option>
+                    <option value="FM-HANAKO開局記念日特番">FM-HANAKO開局記念日特番</option>
+                    <option value="その他の番組">その他の番組</option>
+                    <option value="プレゼント応募">プレゼント応募</option>
+                  </select>
+</dd>
+
+<dt>パーソナリティ</dt>
+<dd>                <select name="パーソナリティ" class="children">
+                    <option value="（月）岩崎いくよ" data-val="さわやかワイド824！">（月）岩崎いくよ</option>
+                    <option value="（火）圓谷優依" data-val="さわやかワイド824！">（火）圓谷優依</option>
+                    <option value="（水）加美川千尋" data-val="さわやかワイド824！">（水）加美川千尋</option>
+                    <option value="（木）倉田かな" data-val="さわやかワイド824！">（木）倉田かな</option>
+                    <option value="（金）山田あんず" data-val="さわやかワイド824！">（金）山田あんず</option>
+                    <option value="（月）林亜由子" data-val="プロムナード824">（月）林亜由子</option>
+                    <option value="（火）ターキー" data-val="プロムナード824">（火）ターキー</option>
+                    <option value="（水）髙梨あかり" data-val="プロムナード824">（水）髙梨あかり</option>
+                    <option value="（木）大槻直美" data-val="プロムナード824">（木）大槻直美</option>
+                    <option value="（金）西田ゆい" data-val="プロムナード824">（金）西田ゆい</option>
+                    <option value="藤田明美" data-val="しあわせ歌ＢＯＸ">藤田明美</option>
+                    <option value="あきっすん" data-val="そんな☆あきっすん">あきっすん</option>
+　　　　　　　　　　<option value="原みどり・くーみん" data-val="原みどりとくーみんの歌好きパラダイス">原みどり・くーみん</option>
+　　　　　　　　　　<option value="守口門真青年会議所メンバー" data-val="守口門真JCのモカチャンネル">守口門真青年会議所メンバー</option>
+　　　　　　　　　　<option value="田畑実和" data-val="田畑実和のうたいろレター">田畑実和</option>
+                    <option value="川口哲也" data-val="川口哲也の演歌街道">川口哲也</option>
+    　　　　　　　　<option value="守成クラブ京阪守口メンバー" data-val="仕事バンバンRadio">守成クラブ京阪守口メンバー</option>
+　                　<option value="石山雅雄・ゆか" data-val="石山雅雄のぴあの大好き">石山雅雄・ゆか</option>
+                    <option value="夢香・島津健" data-val="夢香とDREAM MUSIC">夢香・島津健</option>
+    　　　　　　　　<option value="前野彩・鹿野佐代子" data-val="Waku Waku MoneyLife">前野彩・鹿野佐代子</option>
+                    <option value="七瀬美菜" data-val="七瀬美菜のトントンタイム">七瀬美菜</option>
+                    <option value="ゆっきぃ" data-val="ゆっきぃのイケてるラジヲ">ゆっきぃ</option>
+　　　　　　　　　　<option value="光岡洋" data-val="光岡洋と歌仲間・絆">光岡洋</option>
+　　　　　　　　　  <option value="河田真喜子・伊藤久美子" data-val="FUN!FUN!シネルフレ">河田真喜子・伊藤久美子</option>
+                    <option value="疋田哲夫・辰寿広美" data-val="哲ちゃんの哲学">疋田哲夫・辰寿広美</option>
+　　　　　　　　　　<option value="こひなあすか・むらや" data-val="こひなあすかのオタさいふぁ">こひなあすか・むらや</option>
+                    <option value="栄田慶子" data-val="バン子の繋ごう！愛のバトン">栄田慶子</option>
+　　　　　　　　　　<option value="大阪国際大学学生" data-val="OIUラジオ放送部">大阪アニカレ学生</option>
+                    <option value="大阪アニカレ学生" data-val="ミュージックワークショップ">大阪アニカレ学生</option>
+　　　　　　　　　  <option value="宇田祥次" data-val="宇田祥次　一筋の道">宇田祥次</option>
+　　　　　　　   　 <option value="桂三馬枝" data-val="桂三馬枝の「出会いは宝」">桂三馬枝</option>
+                    <option value="（12/29）加美川千尋" data-val="年の瀬・新春ワイド824！">（12/29）加美川千尋</option>
+                    <option value="（12/30）南野智香" data-val="年の瀬・新春ワイド824！">（12/30）南野智香</option>
+                    <option value="（12/31）大西愛菜" data-val="年の瀬・新春ワイド824！">（12/31）大西愛菜</option>
+                    <option value="（1/1）ターキー" data-val="年の瀬・新春ワイド824！">（1/1）ターキー</option>
+                    <option value="（1/2）川中博子" data-val="年の瀬・新春ワイド824！">（1/2）川中博子</option>
+                    <option value="（1/3）林亜由子" data-val="年の瀬・新春ワイド824！">（1/3）林亜由子</option>
+                    <option value="その他" data-val="FM-HANAKO開局記念日特番">その他</option>
+                    <option value="その他" data-val="その他の番組" selected>その他</option>
+                    <option value="その他" data-val="プレゼント応募">その他</option>
+                  </select>
+</dd>
+
+<dt>ラジオネーム　※</dt>
+<dd><input type="text" name="_ラジオネーム"></dd>
+
+<dt>名前</dt>
+<dd><input type="text" name="名前"></dd>
+
+<dt>年齢</dt>
+<dd><select name="年齢">
+                    <option selected="">---</option>
+                    <option>10代以下</option>
+                    <option>20代</option>
+                    <option>30代</option>
+                    <option>40代</option>
+                    <option>50代</option>
+ 　                 <option>60代以上</option></select></dd>
+    
+<dt>性別</dt>
+<dd><select name="性別">
+                    <option selected="">---</option>
+                    <option>答えない</option>
+ 　                 <option>女性</option>
+                    <option>男性</option>
+</select></dd>
+
+<dt>住所</dt>
+<dd><input type="text" name="住所"></dd>
+
+<dt>TEL　※</dt>
+<dd><input type="text" name="_TEL"></dd>
+
+<dt>e-mail</dt>
+<dd><input type="text" name="e-mail"></dd>
+
+<dt>コメント</dt>
+<dd>
+<textarea name="コメント" rows="4"></textarea>
+</dd>
+</dl>
+
+
+<p class="send-button"><input type="submit" value="送　信">　　<input type="reset" value="消　去"></p>
+
+    
+</form>
+</div>
+
+</div>
+    
+        
+        
+    
+    </div>
+    
+</section>
+
+
+
+
+</body>
+</html>
