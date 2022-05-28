@@ -1193,7 +1193,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    margin: 1rem 0 2rem 0;
 }
 .middle-policy-container{
     width: 1260px;
