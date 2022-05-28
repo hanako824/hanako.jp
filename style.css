@@ -1578,6 +1578,15 @@ p{
         height: 300px;
         margin: -230px 0 0;
     }
+    .middle-address-inf-1-bot {
+        padding-left: 1rem;
+    }
+    .middle-address-inf-2-bot {
+        padding-left: 1rem;
+    }
+    .middle-address-inf-1-top, .middle-address-inf-2-top {
+        padding-left: 1rem;
+    }
 }
 @media (max-width: 474px){
     .header-nav-plus{
