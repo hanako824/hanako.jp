@@ -1453,6 +1453,12 @@ p{
     .form-container{
         width: 95%;
     }
+    .header-nav-logo {
+        margin-left: 1rem;
+    }
+    .header-nav-item-container {
+        margin-right: 1rem;
+    }
 }
 @media (max-width: 650px) {
     .middle-address-inf-1, .middle-address-inf-2{
