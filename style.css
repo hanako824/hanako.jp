@@ -1075,14 +1075,14 @@ p{
     width: 100%;
     font-family: 'Noto Sans JP', sans-serif;
 }
-.middle-form{
+.myForm{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 .form-container{
     width: 700px;
-    margin: 2rem 0 2rem 0;
+    margin: 0 0 2rem 0;
     padding: 1rem 1rem 0 1rem;
     border: 1px solid rgb(80, 80, 80, 0.2);
     box-shadow: 3px 3px 7px rgb(80, 80, 80, 0.2);
@@ -1188,10 +1188,63 @@ p{
     font-weight: 500;
     color: rgb(58, 164, 183);
 }
-
-
-
-
+.middle-policy{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.middle-policy-container{
+    width: 1260px;
+}
+.middle-policy-title{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(50, 50, 50);
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.middle-policy-title-text{
+    width: 17%;
+}
+.middle-policy-title-sen{
+    width: 83%;
+    height: 1px;
+    background: rgb(100, 100, 100, .2);
+}
+.middle-policy-contents{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(100, 100, 100, .2);
+    padding: .5rem 3rem .5rem 3rem;
+}
+.middle-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middle-form-container{
+    width: 1260px;
+}
+.middle-form-title{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(50, 50, 50);
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.middle-form-title-text{
+    width: 15%;
+}
+.middle-form-title-sen{
+    width: 85%;
+    height: 1px;
+    background: rgb(100, 100, 100, .2);
+}
 
 
 

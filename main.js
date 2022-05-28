@@ -168,7 +168,7 @@ function handleToggle(){
 
       // modalBottom.style.justifyContent = 'space-between'
     }
-  });
+  })
 
   close.onclick = () => {
     modal.style.display = 'none'
@@ -179,7 +179,7 @@ function handleToggle(){
 
     next.style.display = 'none'
   }
-})()
+})
 
 // Calendar
 ;(() => {
