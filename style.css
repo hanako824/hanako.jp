@@ -1330,6 +1330,28 @@ p{
         width: 710px;
     }
 }
+@media screen and (max-width: 1300px) {
+    .middle-policy-container, .middle-form-container, .middle-address-container {
+        width: 95%;
+    }
+    .middle-policy-contents {
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+    .middle-address-inf{
+        display: block;
+    }
+    .middle-address-inf-1{
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .middle-policy-title-text, .middle-form-title-text, .middle-address-title-text {
+        width: 50%;
+    }
+    .middle-policy-title-sen, .middle-form-title-sen, .middle-address-title-sen {
+        width: 50%;
+    }
+}
 @media screen and (max-width: 1030px) {
     .link{
         width: 95%;
@@ -1432,6 +1454,11 @@ p{
         width: 95%;
     }
 }
+@media (max-width: 650px) {
+    .middle-address-inf-1, .middle-address-inf-2{
+        width: 100%;
+    }
+}
 @media (max-width: 680px) {
     .link-container-main{
         display: none;
@@ -1461,6 +1488,12 @@ p{
     }
     .new-container-item-body-hover{
         font-size: 24px;
+    }
+    .middle-policy-title-text, .middle-form-title-text, .middle-address-title-text{
+        width: 95%;
+    }
+    .middle-policy-title-sen, .middle-form-title-sen, .middle-address-title-sen {
+        width: 0%;
     }
 }
 @media (max-width: 500px) {
