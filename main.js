@@ -218,7 +218,7 @@ function handleToggle(){
   })
 
   htmlMonth.forEach(element => {
-    let m = now.getMonth()
+    let m = now.getMonth()+1
 
     element.innerHTML = m
   })
@@ -238,7 +238,7 @@ function handleToggle(){
   })
 
   htmlMonthMobile.forEach(element => {
-    let m = now.getMonth()
+    let m = now.getMonth()+1
 
     element.innerHTML = m
   })

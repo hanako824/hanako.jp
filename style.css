@@ -1245,7 +1245,38 @@ p{
     height: 1px;
     background: rgb(100, 100, 100, .2);
 }
-
+.middle-rule{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 2rem 0;
+}
+.middle-rule-container{
+    width: 1260px;
+}
+.middle-rule-title{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(50, 50, 50);
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.middle-rule-title-text{
+    width: 35%;
+}
+.middle-rule-title-sen{
+    width: 65%;
+    height: 1px;
+    background: rgb(100, 100, 100, .2);
+}
+.middle-rule-contents{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(100, 100, 100, .2);
+    padding: .5rem 3rem .5rem 3rem;
+}
 
 
 
@@ -1331,10 +1362,10 @@ p{
     }
 }
 @media screen and (max-width: 1300px) {
-    .middle-policy-container, .middle-form-container, .middle-address-container {
+    .middle-policy-container, .middle-form-container, .middle-address-container, .middle-rule-container {
         width: 95%;
     }
-    .middle-policy-contents {
+    .middle-policy-contents, .middle-rule-contents {
         padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     }
     .middle-address-inf{
@@ -1345,10 +1376,10 @@ p{
     }
 }
 @media screen and (max-width: 1200px) {
-    .middle-policy-title-text, .middle-form-title-text, .middle-address-title-text {
+    .middle-policy-title-text, .middle-form-title-text, .middle-address-title-text, .middle-rule-title-text {
         width: 50%;
     }
-    .middle-policy-title-sen, .middle-form-title-sen, .middle-address-title-sen {
+    .middle-policy-title-sen, .middle-form-title-sen, .middle-address-title-sen, .middle-rule-title-sen {
         width: 50%;
     }
 }
@@ -1495,10 +1526,10 @@ p{
     .new-container-item-body-hover{
         font-size: 24px;
     }
-    .middle-policy-title-text, .middle-form-title-text, .middle-address-title-text{
+    .middle-policy-title-text, .middle-form-title-text, .middle-address-title-text, .middle-rule-title-text{
         width: 95%;
     }
-    .middle-policy-title-sen, .middle-form-title-sen, .middle-address-title-sen {
+    .middle-policy-title-sen, .middle-form-title-sen, .middle-address-title-se, .middle-rule-title-sen {
         width: 0%;
     }
 }
