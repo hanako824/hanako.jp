@@ -1,5 +1,62 @@
+import { topic, archive } from './controller.js'
+
 // data
 const videoLink = 'https://www.youtube.com/embed/Uddh4TrCotY'
+
+//Topic item
+;(()=>{
+  const topicRow = document.getElementById('topicRow')
+
+  const html = topic.map(element => {
+    return `
+      <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 topic-col ">
+        <div class="topic-col-item">
+          <div class="topic-col-item-head">
+              <img src="${element.img}">
+          </div>
+
+          <div class="topic-col-item-description">
+              <div class="topic-col-item-description-top">
+                  ${element.title}
+              </div>
+              <div class="topic-col-item-description-bot">
+                  ${element.description}
+              </div>
+          </div>
+        </div>
+      </div>
+    `
+  })
+
+  topicRow.innerHTML = html.join('')
+})()
+
+// Archive item
+;(() => {
+  const swiperWrapper = document.getElementById('swiperWrapper')
+
+  const html = archive.map(element => {
+    return `
+      <div class="swiper-slide" yLink="${element.youtubeLink}">
+        <img class="swiper-slide-img" src="${element.img}">
+
+        <div class="swiper-slide-description">
+            <div class="swiper-slide-description-top">
+                <span>
+                  ${element.title}
+                </span>
+            </div>
+
+            <div class="swiper-slide-description-bot">
+                ${element.date}
+            </div>
+        </div>
+      </div>
+    `
+  })
+
+  swiperWrapper.innerHTML = html.join('')
+})()
 
 // Swiper
 var swiper = new Swiper('.swiper', {
@@ -161,12 +218,6 @@ function handleToggle(){
       modalBottom.style.justifyContent = 'center'
 
       modalIfame.src = element.attributes.yLink.value
-
-      // prev.style.display = 'flex'
-
-      // next.style.display = 'flex'
-
-      // modalBottom.style.justifyContent = 'space-between'
     }
   })
 
