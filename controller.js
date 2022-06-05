@@ -151,3 +151,74 @@ export const news = [
     },
 ]
 // -----------------------お知らせ 終了-----------------------
+
+// バナースタート
+export const banner = [
+
+    // 1個目
+    {
+        url: 'https://www.city.moriguchi.osaka.jp/',
+        img: './img/HPバナー/守口市章Original_1-no1.jpg'
+    },
+
+    // 2個目
+    {
+        url: 'https://www.city.kadoma.osaka.jp/',
+        img: './img/HPバナー/門真市ホームページ　バナー画像-no2.png'
+    },
+
+    // 3個目
+    {
+        url: 'https://www.oiei.jp/',
+        img: './img/HPバナー/oiu--no3.png'
+    },
+
+    // 4個目
+    {
+        url: 'https://www.mk-cci.jp/',
+        img: './img/HPバナー/mk-cci-1-no4.png'
+    },
+
+    // 5個目
+    {
+        url: 'https://www.tiger.jp/',
+        img: './img/HPバナー/tiger-no5.png'
+    },
+
+    // 6個目
+    {
+        url: 'https://www.kmu.ac.jp/takii/index.html',
+        img: './img/HPバナー/関西医大バナー06-no6.jpg'
+    },
+
+    // 7個目
+    {
+        url: 'http://since1971yakinikuyassan.com/',
+        img: './img/HPバナー/yassan_baner01s-no7.gif'
+    },
+
+    // 8個目
+    {
+        url: 'https://s.n-kishou.co.jp/w/charge/jikei/jikeid.html?ba=27&code=27209&fla=day',
+        img: './img/HPバナー/nihonkisyou_tennabi_bana_200x80-no8.png'
+    },
+
+    // 9個目
+    {
+        url: 'http://staff-diary.seesaa.net/article/461973092.html?1538468081',
+        img: './img/HPバナー/fuushin_nakusou_bana-no9.jpg'
+    },
+
+    // 10個目
+    {
+        url: 'https://www.daisinkaikan.com/',
+        img: './img/HPバナー/daishinkaikan01-no10.jpg'
+    },
+
+    // 11個目
+    {
+        url: 'http://staff-diary.seesaa.net/article/474455477.html',
+        img: './img/HPバナー/ouchidehanako-no11.jpg'
+    }
+]
+// -----------------------バナー 終了-----------------------

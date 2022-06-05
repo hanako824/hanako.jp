@@ -1,4 +1,4 @@
-import { topic, archive, news } from './controller.js'
+import { topic, archive, news, banner } from './controller.js'
 
 // data
 const videoLink = 'https://www.youtube.com/embed/Uddh4TrCotY'
@@ -115,6 +115,21 @@ const videoLink = 'https://www.youtube.com/embed/Uddh4TrCotY'
   })
 
   newContainer.innerHTML = html.join('')
+})()
+
+// Banner item
+;(() => {
+  const bannerContainer = document.getElementById('bannerContainer')
+
+  const html = banner.map(element => {
+    return `
+      <div class="banner-container-main-slide-item">
+        <a href="${element.url}" target="_blank"><img src="${element.img}" alt=""></a>
+      </div>
+    `
+  })
+
+  bannerContainer.innerHTML = html.join('')
 })()
 
 // Swiper
