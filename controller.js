@@ -224,5 +224,7 @@ export const banner = [
 // -----------------------バナー 終了-----------------------
 
 // トップ画像スタート
+
 export const headerImg = 'https://images.unsplash.com/photo-1613909207039-6b173b755cc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1547&q=80'
+
 // -----------------------トップ画像 終了-----------------------
