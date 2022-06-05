@@ -1523,10 +1523,10 @@ p{
     .new-container-item-body-hover{
         font-size: 24px;
     }
-    .middle-policy-title-text, .middle-form-title-text, .middle-address-title-text, .middle-rule-title-text{
+    .middle-policy-title-text, .middle-form-title-text, .middle-address-title-text, .middle-rule-title-text, .middle-address-title-text{
         width: 95%;
     }
-    .middle-policy-title-sen, .middle-form-title-sen, .middle-address-title-se, .middle-rule-title-sen {
+    .middle-policy-title-sen, .middle-form-title-sen, .middle-address-title-se, .middle-rule-title-sen, .middle-address-title-sen {
         width: 0%;
     }
 }
