@@ -1,7 +1,14 @@
-import { topic, archive, news, banner } from './controller.js'
+import { topic, archive, news, banner, headerImg } from './controller.js'
 
 // data
 const videoLink = 'https://www.youtube.com/embed/Uddh4TrCotY'
+
+// Header background
+;(() => {
+  const header = document.querySelector('.header')
+
+  header.style.background = `url('${headerImg}') center/cover no-repeat`
+})()
 
 //Topic item
 ;(()=>{
@@ -156,7 +163,7 @@ function getDirection() {
   return direction;
 }
 
-// Header
+// Header toggle
 ;(() => {
   const toggleA = document.querySelectorAll('.toggleA')
 
