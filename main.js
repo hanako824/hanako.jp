@@ -220,7 +220,7 @@ function handleToggle(){
   }
 
   handleScroll()
-})()
+})
 
 // Nav Plus
 ;(() => {
