@@ -130,7 +130,7 @@ const videoLink = 'https://www.youtube.com/embed/Uddh4TrCotY'
   })
 
   bannerContainer.innerHTML = html.join('')
-})()
+})
 
 // Swiper
 var swiper = new Swiper('.swiper', {
@@ -157,7 +157,7 @@ function getDirection() {
 }
 
 // Header
-function handleToggle(){
+const handleToggle = function(){
   const menuTrigger = document.querySelector('.menu-trigger')
 
   const navPlus = document.querySelector('.header-nav-plus')
@@ -220,7 +220,7 @@ function handleToggle(){
   }
 
   handleScroll()
-})
+})()
 
 // Nav Plus
 ;(() => {
