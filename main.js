@@ -1,4 +1,4 @@
-import { topic, archive } from './controller.js'
+import { topic, archive, news } from './controller.js'
 
 // data
 const videoLink = 'https://www.youtube.com/embed/Uddh4TrCotY'
@@ -56,6 +56,65 @@ const videoLink = 'https://www.youtube.com/embed/Uddh4TrCotY'
   })
 
   swiperWrapper.innerHTML = html.join('')
+
+  const yb = document.querySelectorAll('.swiper-slide')
+
+  const modal = document.querySelector('.myModal')
+
+  const modalTitle = document.querySelector('.myModal-container-title-contents')
+  
+  const modalBottom = document.querySelector('.myModal-container-bottom')
+  
+  const modalIfame = document.querySelector('.myModal-container-video-i')
+
+  const close = document.querySelector('.myModal-container-bottom-close')
+
+  yb.forEach(element => {
+    element.onclick = () => {
+      modal.style.display = 'flex'
+
+      modalTitle.innerHTML = 'アーカイブ'
+
+      modalBottom.style.justifyContent = 'center'
+
+      modalIfame.src = element.attributes.yLink.value
+    }
+  })
+
+  close.onclick = () => {
+    modal.style.display = 'none'
+
+    modalIfame.src = ''
+  }
+})()
+
+// News item
+;(() => {
+  const newContainer = document.getElementById('newContainer')
+
+  const html = news.map(element => {
+    return `
+    <div class="new-container-item">
+      <div class="new-container-item-head">
+          <span class="new-container-item-head-date">${element.date}</span>
+
+          <span class="new-container-item-head-title">${element.title}</span>
+      </div>
+
+      <div class="new-container-item-body">
+        ${element.omit_contents}
+      </div>
+
+      <div class="new-container-item-body-hover">
+          <div>
+            詳しく見る&nbsp;<i class="fa-solid fa-eye"></i>
+          </div>
+      </div>
+    </div>  
+    `
+  })
+
+  newContainer.innerHTML = html.join('')
 })()
 
 // Swiper
@@ -178,19 +237,19 @@ function handleToggle(){
   }
 })()
 
-// Video
+// Video disable now
 ;(() => {
   const live = document.querySelector('#live')
 
   const modal = document.querySelector('.myModal')
 
-  const close = document.querySelector('.myModal-container-bottom-close')
-
   const modalTitle = document.querySelector('.myModal-container-title-contents')
-
+  
   const modalBottom = document.querySelector('.myModal-container-bottom')
-
+  
   const modalIfame = document.querySelector('.myModal-container-video-i')
+  
+  const close = document.querySelector('.myModal-container-bottom-close')
 
   const slide = document.querySelectorAll('.swiper-slide')
 
