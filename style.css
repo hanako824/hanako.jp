@@ -178,7 +178,7 @@ p{
     overflow: hidden;
 }
 .header-marquee-span{
-    animation: marquee 7s infinite linear;
+    /* animation: marquee 7s infinite linear; */
 }
 @keyframes marquee {
     from{
@@ -1274,7 +1274,12 @@ p{
     border: 1px solid rgb(100, 100, 100, .2);
     padding: .5rem 3rem .5rem 3rem;
 }
-
+.iframe-modal{
+    position: absolute;
+    top: 200px;
+    right: 0;
+    display: none;
+}
 
 
 
