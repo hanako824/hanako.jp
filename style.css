@@ -1278,9 +1278,8 @@ p{
     position: absolute;
     top: 200px;
     right: 0;
-    display: none;
+    /* display: none; */
 }
-
 
 
 
