@@ -387,7 +387,35 @@ function getDirection() {
 
   const iframeModal = document.querySelector('.iframe-modal')
 
+  const playImg = document.querySelector('.header-player-circle-item-main-img')
+
+  const iframeHidden = document.querySelector('.iframe-hidden')
+
+  const iframeClose = document.querySelector('.iframe-close')
+
+  const myIframe = document.querySelector('.myIframe')
+
   netradioBtn.onclick = () => {
     iframeModal.style.display = 'flex'
+
+    playImg.style.animation = 'kaiten 4s infinite linear'
+
+    if(myIframe.src != 'https://www.jcbasimul.com/radio/821/'){
+      myIframe.src = 'https://www.jcbasimul.com/radio/821/'
+    }
+
+    console.log(myIframe.src);
+  }
+
+  iframeHidden.onclick = () => {
+    iframeModal.style.display = 'none'
+  }
+
+  iframeClose.onclick = () => {
+    iframeModal.style.display = 'none'
+
+    myIframe.src = ''
+
+    playImg.style.animation = ''
   }
 })()

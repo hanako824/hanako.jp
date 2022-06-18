@@ -179,7 +179,7 @@ p{
     overflow: hidden;
 }
 .header-marquee-span{
-    /* animation: marquee 7s infinite linear; */
+    animation: marquee 7s infinite linear;
 }
 @keyframes marquee {
     from{
@@ -1291,7 +1291,14 @@ p{
     width: 400px;
     height: 440px;
 }
-
+.iframe-nav{
+    color: white;
+}
+.iframe-hidden:hover, .iframe-close:hover{
+    color: rgb(58, 164, 183);
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 
 
