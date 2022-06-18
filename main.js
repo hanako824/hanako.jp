@@ -381,3 +381,13 @@ function getDirection() {
     element.innerHTML = m
   })
 })()
+
+;(() => {
+  const netradioBtn = document.querySelector('#netradioBtn')
+
+  const iframeModal = document.querySelector('.iframe-modal')
+
+  netradioBtn.onclick = () => {
+    iframeModal.style.display = 'flex'
+  }
+})()
