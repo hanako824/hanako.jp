@@ -18,11 +18,11 @@
 
 // Calendar
 ;(() => {
-  const now = new Date();
+  const now = new Date()
 
   const nowM = new Date()
 
-  const wd = ['日曜日', '月曜日', '火曜日', '水曜日', '木曜日', '金曜日', '土曜日'];
+  const wd = ['日曜日', '月曜日', '火曜日', '水曜日', '木曜日', '金曜日', '土曜日']
 
   const htmlDate = document.querySelectorAll('.calendar-container-main-head-item-top-span')
 
@@ -53,7 +53,7 @@
   })
 
   htmlMonth.forEach(element => {
-    let m = now.getMonth()+1
+    let m = now.getMonth()
 
     element.innerHTML = m
   })
@@ -73,7 +73,7 @@
   })
 
   htmlMonthMobile.forEach(element => {
-    let m = now.getMonth()+1
+    let m = now.getMonth()
 
     element.innerHTML = m
   })
