@@ -1322,6 +1322,26 @@ p{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Shrinking for mobile*/
 @media screen and (max-width: 1560px) {
     .calendar-container{
@@ -1515,17 +1535,17 @@ p{
         margin-right: 1rem;
     }
 }
-@media (max-width: 650px) {
-    .middle-address-inf-1, .middle-address-inf-2{
-        width: 100%;
-    }
-}
 @media (max-width: 680px) {
     .link-container-main{
         display: none;
     }
     .link-container-main-mobile{
         display: flex;
+    }
+}
+@media (max-width: 650px) {
+    .middle-address-inf-1, .middle-address-inf-2{
+        width: 100%;
     }
 }
 @media (max-width: 565px) {
@@ -1673,6 +1693,31 @@ p{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Other */
 .title-h1-div{
     animation: jumpUp .2s alternate linear;
 }
@@ -1720,16 +1765,10 @@ p{
 .d14{
     animation-delay: 0.55s;
 }
-
-
-
-
-
 .myFade {
     opacity: 0;
     transition: 2s;
 }
-  
 .myFade-in {
     opacity: 1;
 }
