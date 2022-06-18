@@ -420,3 +420,38 @@ function getDirection() {
     playImg.style.animation = ''
   }
 })()
+
+// Blog 
+;(() => {
+  const blog = document.querySelector('#blog')
+
+  const blogMobile = document.querySelector('#blogMobile')
+
+  const modal = document.querySelector('.myModal')
+
+  const modalTitle = document.querySelector('.myModal-container-title-contents')
+
+  const modalBottom = document.querySelector('.myModal-container-bottom')
+  
+  const close = document.querySelector('.myModal-container-bottom-close')
+
+  blog.onclick = () => {
+    modal.style.display = 'flex'
+
+    modalTitle.innerHTML = 'Blog'
+
+    modalBottom.style.justifyContent = 'center'
+  }
+
+  blogMobile.onclick = () => {
+    modal.style.display = 'flex'
+
+    modalTitle.innerHTML = 'Blog'
+
+    modalBottom.style.justifyContent = 'center'
+  }
+
+  close.onclick = () => {
+    modal.style.display = 'none'
+  }
+})()
