@@ -15,7 +15,7 @@
 </head>
 <body>
     <!--Header start-->
-    <div class="header-nav" style="background: rgb(80, 80, 80) !important;">
+    <div class="header-nav">
         <a href="./index.html" class="header-nav-logo-a">
             <div class="header-nav-logo">
                 <div style="display: flex;">
@@ -33,6 +33,10 @@
         </a>
 
         <div class="header-nav-items">
+            <a href="https://twitter.com/FM_HANAKO" target="_blank"><div class="header-nav-item">
+                Twitter
+            </div></a>
+
             <a href="./calendar.html"><div class="header-nav-item">
                 番組表
             </div></a>
@@ -237,6 +241,29 @@
             </div>
         </div>
     </div>
+
+    <div class="req-header">
+        <!--Content before waves-->
+        <div class="req-inner-header req-flex">
+            <h1>番組表</h1>
+        </div>
+  
+        <!--Waves Container-->
+        <div>
+            <svg class="req-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="req-parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+        <!--Waves end-->
+    </div>
     <!--Header ends-->
 
     <div class="middle">
@@ -244,21 +271,6 @@
         <!-- Calendar -->
         <div class="calendar mt-4" id="calendar">
             <div class="calendar-container">
-                <div class="title mb-4">
-                    <h1 class="ms-3">
-                        <div style="display: flex;">
-                            <div class="z">C</div>
-                            <div class="z d1">A</div>
-                            <div class="z d2">L</div>
-                            <div class="z d3">E</div>
-                            <div class="z d4">N</div>
-                            <div class="z d5">D</div>
-                            <div class="z d6">A</div>
-                            <div class="z d7">R</div>
-                        </div>
-                    </h1>
-                </div>
-
                 <div class="calendar-container-main">
                     <div class="calendar-container-main-head">
                         <div class="calendar-container-main-head-item calendar-active">

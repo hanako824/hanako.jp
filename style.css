@@ -25,7 +25,6 @@ p{
     position: relative;
     text-align: center;
     /* background: linear-gradient(60deg, rgb(0, 100, 193) 0%, rgb(58, 164, 183) 100%); */
-    /* background: url('https://images.unsplash.com/photo-1613909207039-6b173b755cc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1547&q=80') center/cover no-repeat; */
     overflow: hidden;
     color:white;
 }
@@ -1076,7 +1075,7 @@ p{
 }
 .middle{
     position: absolute;
-    top: 100px;
+    top: 30vh;
     left: 0;
     width: 100%;
     font-family: 'Noto Sans JP', sans-serif;
@@ -1779,4 +1778,151 @@ p{
 }
 .myFade-in {
     opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.req-header{
+    position: relative;
+    text-align: center;
+    background: linear-gradient(60deg, rgb(58, 164, 183) 0%, rgb(33, 119, 199) 100%);
+    overflow: hidden;
+    color:white;
+}
+.req-logo{
+    width: 50px;
+    fill: white;
+    padding-right: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.req-inner-header{
+    height: 20vh;
+    width: 100%;
+    margin: 0 0 0 2rem;
+    padding: 0;
+}
+.req-flex { 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* text-align: center; */
+}
+
+.req-waves {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    margin-bottom: -7px;
+    min-height: 50px;
+    max-height: 80px;
+}
+
+.req-content {
+    position: relative;
+    height: 20vh;
+    text-align: center;
+    background-color: white;
+}
+
+/* Animation */
+
+.req-parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+}
+.req-parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.req-parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+.req-parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+.req-parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
 }
