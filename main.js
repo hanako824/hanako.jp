@@ -427,6 +427,10 @@ function getDirection() {
 
   const blogMobile = document.querySelector('#blogMobile')
 
+  const navBlog = document.querySelector('#navBlog')
+
+  const mobileNavBlog = document.querySelector('#mobileNavBlog')
+
   const modal = document.querySelector('.myModal')
 
   const modalTitle = document.querySelector('.myModal-container-title-contents')
@@ -435,7 +439,15 @@ function getDirection() {
   
   const close = document.querySelector('.myModal-container-bottom-close')
 
-  blog.onclick = () => {
+  const menuTrigger = document.querySelector('.menu-trigger')
+    
+  const navPlus = document.querySelector('.header-nav-plus')
+    
+  const navPlusM = document.querySelector('.header-nav-plus-mobile')
+    
+  const headerNav = document.querySelector('.header-nav')
+
+  const handleShowBlog = () => {
     modal.style.display = 'flex'
 
     modalTitle.innerHTML = 'Blog'
@@ -443,15 +455,56 @@ function getDirection() {
     modalBottom.style.justifyContent = 'center'
   }
 
+  blog.onclick = () => {
+    handleShowBlog()
+  }
+
   blogMobile.onclick = () => {
-    modal.style.display = 'flex'
+    handleShowBlog()
+  }
 
-    modalTitle.innerHTML = 'Blog'
+  navBlog.onclick = () => {
+    handleShowBlog()
 
-    modalBottom.style.justifyContent = 'center'
+    menuTrigger.classList.toggle('active')
+    
+    navPlus.classList.toggle('show')
+    
+    navPlusM.classList.toggle('show')
+    
+    if(navPlus.classList.length == 2){
+      headerNav.style.background = "rgb(70, 70, 70)";
+    }else{
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        headerNav.style.background = "rgb(70, 70, 70)";
+      } else {
+        headerNav.style.background = "";
+      }
+    }
+  }
+
+  mobileNavBlog.onclick = () => {
+    handleShowBlog()
+
+    menuTrigger.classList.toggle('active')
+    
+    navPlus.classList.toggle('show')
+    
+    navPlusM.classList.toggle('show')
+    
+    if(navPlus.classList.length == 2){
+      headerNav.style.background = "rgb(70, 70, 70)";
+    }else{
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        headerNav.style.background = "rgb(70, 70, 70)";
+      } else {
+        headerNav.style.background = "";
+      }
+    }
   }
 
   close.onclick = () => {
     modal.style.display = 'none'
   }
+  
 })()
