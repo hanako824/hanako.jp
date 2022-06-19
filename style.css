@@ -1066,6 +1066,14 @@ p{
 .myModal-container-bottom-prev:hover, .myModal-container-bottom-next:hover{
     cursor: pointer;
 }
+.myModal-container-bloglist-item a{
+    text-decoration: none;
+    color: rgb(58, 164, 183);
+}
+.myModal-container-bloglist-item a:hover{
+    text-decoration: underline;
+    color: rgba(58, 164, 183, 0.7);
+}
 .middle{
     position: absolute;
     top: 100px;

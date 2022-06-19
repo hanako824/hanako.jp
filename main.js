@@ -76,6 +76,10 @@ const videoLink = 'https://www.youtube.com/embed/Uddh4TrCotY'
 
   const close = document.querySelector('.myModal-container-bottom-close')
 
+  const myModalContainerVideo = document.querySelector('.myModal-container-video')
+
+  const myModalContainerBloglist = document.querySelector('.myModal-container-bloglist')
+
   yb.forEach(element => {
     element.onclick = () => {
       modal.style.display = 'flex'
@@ -85,6 +89,10 @@ const videoLink = 'https://www.youtube.com/embed/Uddh4TrCotY'
       modalBottom.style.justifyContent = 'center'
 
       modalIfame.src = element.attributes.yLink.value
+
+      myModalContainerVideo.style.display = 'block'
+
+      myModalContainerBloglist.style.display = 'none'
     }
   })
 
@@ -439,6 +447,8 @@ function getDirection() {
   
   const close = document.querySelector('.myModal-container-bottom-close')
 
+  const myModalContainerVideo = document.querySelector('.myModal-container-video')
+
   const menuTrigger = document.querySelector('.menu-trigger')
     
   const navPlus = document.querySelector('.header-nav-plus')
@@ -447,12 +457,18 @@ function getDirection() {
     
   const headerNav = document.querySelector('.header-nav')
 
+  const myModalContainerBloglist = document.querySelector('.myModal-container-bloglist')
+
   const handleShowBlog = () => {
     modal.style.display = 'flex'
 
     modalTitle.innerHTML = 'Blog'
 
     modalBottom.style.justifyContent = 'center'
+
+    myModalContainerVideo.style.display = 'none'
+
+    myModalContainerBloglist.style.display = 'block'
   }
 
   blog.onclick = () => {
