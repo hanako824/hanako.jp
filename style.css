@@ -1530,7 +1530,7 @@ p{
         padding: 0 10px 0 10px;
     }
     .middle{
-        top: 70px;
+        /* top: 70px; */
     }
     .form-container{
         width: 95%;
