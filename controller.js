@@ -44,82 +44,50 @@ export const archive = [
     // 1個目
     {
         youtubeLink: 'https://www.youtube.com/embed/Uddh4TrCotY',
-        img: './img/アーカイブ/',
-        title: 'さわやかワイド',
-        date: '2022/06/04'
+        img: './img/アーカイブ/20220625_ゆっきぃのイケてるラジヲML.png',
+        title: 'ゆっきぃのイケてるラジヲML',
+        date: '2022/06/25'
     },
 
     // 2個目
     {
         youtubeLink: 'https://www.youtube.com/embed/Uddh4TrCotY',
-        img: 'https://images.unsplash.com/photo-1648809644635-951fa3c27440?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-        title: 'さわやかワイド',
-        date: '2022/06/04'
+        img: './img/アーカイブ/20220624_夢香とDREAM MUSIC.png',
+        title: '夢香とDREAM MUSIC',
+        date: '2022/06/24'
     },
 
     // 3個目
     {
         youtubeLink: 'https://www.youtube.com/embed/Uddh4TrCotY',
-        img: 'https://images.unsplash.com/photo-1648737119359-510d4f551382?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80',
-        title: 'さわやかワイド',
-        date: '2022/06/04'
+        img: './img/アーカイブ/20220624_プロムナード82.4.png',
+        title: 'プロムナード82.4',
+        date: '2022/06/24'
     },
 
     // 4個目
     {
         youtubeLink: 'https://www.youtube.com/embed/Uddh4TrCotY',
-        img: 'https://images.unsplash.com/photo-1636961336707-c50c095e8667?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-        title: 'さわやかワイド',
-        date: '2022/06/04'
+        img: './img/アーカイブ/20220624_さわやかワイド82.4Part1.png',
+        title: 'さわやかワイド 82.4 Part1',
+        date: '2022/06/24'
     },
 
     // 5個目
     {
         youtubeLink: 'https://www.youtube.com/embed/Uddh4TrCotY',
-        img: 'https://images.unsplash.com/photo-1648856048007-0552e6c2b3cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80',
-        title: 'さわやかワイド',
-        date: '2022/06/04'
+        img: './img/アーカイブ/20220624_さわやかワイド82.4Part2.png',
+        title: 'さわやかワイド 82.4 Part2',
+        date: '2022/06/24'
     },
 
     // 6個目
     {
         youtubeLink: 'https://www.youtube.com/embed/Uddh4TrCotY',
-        img: 'https://images.unsplash.com/photo-1648822429894-862aaf520318?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80',
-        title: 'さわやかワイド',
-        date: '2022/06/04'
+        img: './img/アーカイブ/20220623_守成クラブ京阪守口プレゼンツ.png',
+        title: '守成クラブ京阪守口プレゼンツ',
+        date: '2022/06/23'
     },
-
-    // 7個目
-    {
-        youtubeLink: 'https://www.youtube.com/embed/Uddh4TrCotY',
-        img: 'https://images.unsplash.com/photo-1648887376593-67064269ef23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-        title: 'さわやかワイド',
-        date: '2022/06/04'
-    },
-
-    // 8個目
-    {
-        youtubeLink: 'https://www.youtube.com/embed/Uddh4TrCotY',
-        img: 'https://images.unsplash.com/photo-1648854006531-361649aa182c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-        title: 'さわやかワイド',
-        date: '2022/06/04'
-    },
-
-    // 9個目
-    {
-        youtubeLink: 'https://www.youtube.com/embed/Uddh4TrCotY',
-        img: 'https://images.unsplash.com/photo-1622559026787-732cf95eaaab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-        title: 'さわやかワイド',
-        date: '2022/06/04'
-    },
-
-    // 10個目
-    {
-        youtubeLink: 'https://www.youtube.com/embed/Uddh4TrCotY',
-        img: 'https://images.unsplash.com/photo-1648842316439-c018ff4e093e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1529&q=80',
-        title: 'さわやかワイド',
-        date: '2022/06/04'
-    }
 ]
 // -----------------------アーカイブ 終了-----------------------
 
@@ -225,6 +193,6 @@ export const banner = [
 
 // トップ画像スタート
 
-export const headerImg = 'https://images.unsplash.com/photo-1613909207039-6b173b755cc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1547&q=80'
+export const headerImg = './img/slide-3.jpg'
 
 // -----------------------トップ画像 終了-----------------------
