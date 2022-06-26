@@ -3,7 +3,7 @@ export const topic = [
 
     // 1個目
     {
-        img: 'https://images.unsplash.com/photo-1648809646466-dd4891a0bc15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+        img: './img/Topic/1.',
         title: 'How to Own Your Audience by Creating an Email List',
         description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
     },
@@ -43,7 +43,7 @@ export const archive = [
 
     // 1個目
     {
-        youtubeLink: 'https://www.youtube.com/embed/Uddh4TrCotY',
+        youtubeLink: 'https://www.youtube.com/embed/xQ9r1GHtp8E',
         img: './img/アーカイブ/20220625_ゆっきぃのイケてるラジヲML.png',
         title: 'ゆっきぃのイケてるラジヲML',
         date: '2022/06/25'
@@ -51,7 +51,7 @@ export const archive = [
 
     // 2個目
     {
-        youtubeLink: 'https://www.youtube.com/embed/Uddh4TrCotY',
+        youtubeLink: 'https://www.youtube.com/embed/UTODI8Bl6xY',
         img: './img/アーカイブ/20220624_夢香とDREAM MUSIC.png',
         title: '夢香とDREAM MUSIC',
         date: '2022/06/24'
@@ -59,7 +59,7 @@ export const archive = [
 
     // 3個目
     {
-        youtubeLink: 'https://www.youtube.com/embed/Uddh4TrCotY',
+        youtubeLink: 'https://www.youtube.com/embed/R1xDrTC4lU4',
         img: './img/アーカイブ/20220624_プロムナード82.4.png',
         title: 'プロムナード82.4',
         date: '2022/06/24'
@@ -67,7 +67,7 @@ export const archive = [
 
     // 4個目
     {
-        youtubeLink: 'https://www.youtube.com/embed/Uddh4TrCotY',
+        youtubeLink: 'https://www.youtube.com/embed/h8FSWN6DzUA',
         img: './img/アーカイブ/20220624_さわやかワイド82.4Part1.png',
         title: 'さわやかワイド 82.4 Part1',
         date: '2022/06/24'
@@ -75,7 +75,7 @@ export const archive = [
 
     // 5個目
     {
-        youtubeLink: 'https://www.youtube.com/embed/Uddh4TrCotY',
+        youtubeLink: 'https://www.youtube.com/embed/8mr0O5Gw8dU',
         img: './img/アーカイブ/20220624_さわやかワイド82.4Part2.png',
         title: 'さわやかワイド 82.4 Part2',
         date: '2022/06/24'
@@ -83,7 +83,7 @@ export const archive = [
 
     // 6個目
     {
-        youtubeLink: 'https://www.youtube.com/embed/Uddh4TrCotY',
+        youtubeLink: 'https://www.youtube.com/embed/_-lh5HOhioM',
         img: './img/アーカイブ/20220623_守成クラブ京阪守口プレゼンツ.png',
         title: '守成クラブ京阪守口プレゼンツ',
         date: '2022/06/23'
