@@ -86,9 +86,12 @@
     element.onclick = ()=>{
       const tab = element.firstElementChild.innerHTML
 
+      const pageTitle = document.querySelector('.page-title')
+
       if (tab == '株主'){
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+        pageTitle.innerHTML = '株主'
 
         companyInfo.innerHTML = `
           <div class="mid-companyInfo-container-item" style="border-top: 1px solid rgba(172, 172, 172, 0.473);">
@@ -113,6 +116,7 @@
       }else if(tab == '決算広告'){
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+        pageTitle.innerHTML = '決算広告'
 
         companyInfo.innerHTML = `
           <div class="mid-companyInfo-container-item" style="border-top: 1px solid rgba(172, 172, 172, 0.473);">
@@ -153,6 +157,7 @@
       }else if(tab == '会社概要'){
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+        pageTitle.innerHTML = '会社概要'
 
         companyInfo.innerHTML = `
                   <div class="mid-companyInfo-container-item" style="border-top: 1px solid rgba(172, 172, 172, 0.473);">
@@ -221,11 +226,12 @@
       }else if(tab == '聴取可能エリア'){
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+        pageTitle.innerHTML = '聴取可能エリア'
 
         companyInfo.innerHTML = `
-              <div class="mid-companyInfo-container-item" style="border-top: 1px solid rgba(172, 172, 172, 0.473);">
-              <div class="mid-companyInfo-container-left">守口市、門真市をメインターゲットに<br><br>北は、枚方市、高槻市。<br><br>南は、生野区、東大阪市。東は、四条畷市。<br><br>西は、東淀川区、都島区まで。</div>
-              <div class="mid-companyInfo-container-right">
+              <div class="mid-companyInfo-container-item areaFix-item" style="border-top: 1px solid rgba(172, 172, 172, 0.473);">
+              <div class="mid-companyInfo-container-left areaFix-left">守口市、門真市をメインターゲットに<br><br>北は、枚方市、高槻市。<br><br>南は、生野区、東大阪市。東は、四条畷市。<br><br>西は、東淀川区、都島区まで。</div>
+              <div class="mid-companyInfo-container-right areaFix-right">
                   <img src="./img/area.jpg" />
               </div>
               </div>
@@ -233,20 +239,21 @@
       }else if(tab == '個人情報保護基本方針'){
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+        pageTitle.innerHTML = '個人情報保護基本方針'
 
         companyInfo.innerHTML = `
               <div class="mid-companyInfo-container-item" style="border-top: 1px solid rgba(172, 172, 172, 0.473);">
-              <div class="mid-companyInfo-container-left">個人情報保護基本方針</div>
-              <div class="mid-companyInfo-container-right">
-                  <span>株式会社エフエムもりぐち（以下「当社」という。）は、聴取者等のプライバシーを尊重し、以下の基本方針にしたがって個人情報の保護を行います。</span><br><br>
-                  <span>1. 当社は、聴取者等より個人情報を取得する場合、利用目的をできる限り特定したうえで、必要な範囲の個人情報を取得します。</span><br><br>
-                  <span>2. 当社は、聴取者等の個人情報を利用目的の達成に必要な範囲に限定して利用します。この範囲を超えて個人情報を利用する必要が生じた場合には、法令により許される場合を除き、その利用について、聴取者等の同意を得るものとします。</span><br><br>
-                  <span>3. 当社は、聴取者等の個人情報を取り扱うにあたり管理責任者を置き、個人情報への不正アクセス、個人情報の紛失、破壊、改ざん及び漏えいなどの予防等、適切な管理に努めます。</span><br><br>
-                  <span>4. 当社は、聴取者等の同意を得た場合または法令により許された場合を除き、聴取者等の個人情報を第三者に提供しません。なお、聴取者等の個人情報を第三者に提供する場合には、提供する情報は必要な範囲のみに限定し、提供先に対して契約等により個人情報の管理を義務付けるとともに、適切な監督を行います。</span><br><br>
-                  <span>5. 当社は、聴取者等が、自身の個人情報の照会、訂正等を希望される場合には、合理的な範囲で、すみやかに対応します。</span><br><br>
-                  <span>6. 当社は、個人情報に関して適用される法令、規範を遵守するとともに、上記の項目における取り組みを適宜見直し、改善していきます。</span><br><br>
-                  <span>株式会社エフエムもりぐち</span>
-              </div>
+                <div class="mid-companyInfo-container-left">個人情報保護基本方針</div>
+                <div class="mid-companyInfo-container-right">
+                    <span>株式会社エフエムもりぐち（以下「当社」という。）は、聴取者等のプライバシーを尊重し、以下の基本方針にしたがって個人情報の保護を行います。</span><br><br>
+                    <span>1. 当社は、聴取者等より個人情報を取得する場合、利用目的をできる限り特定したうえで、必要な範囲の個人情報を取得します。</span><br><br>
+                    <span>2. 当社は、聴取者等の個人情報を利用目的の達成に必要な範囲に限定して利用します。この範囲を超えて個人情報を利用する必要が生じた場合には、法令により許される場合を除き、その利用について、聴取者等の同意を得るものとします。</span><br><br>
+                    <span>3. 当社は、聴取者等の個人情報を取り扱うにあたり管理責任者を置き、個人情報への不正アクセス、個人情報の紛失、破壊、改ざん及び漏えいなどの予防等、適切な管理に努めます。</span><br><br>
+                    <span>4. 当社は、聴取者等の同意を得た場合または法令により許された場合を除き、聴取者等の個人情報を第三者に提供しません。なお、聴取者等の個人情報を第三者に提供する場合には、提供する情報は必要な範囲のみに限定し、提供先に対して契約等により個人情報の管理を義務付けるとともに、適切な監督を行います。</span><br><br>
+                    <span>5. 当社は、聴取者等が、自身の個人情報の照会、訂正等を希望される場合には、合理的な範囲で、すみやかに対応します。</span><br><br>
+                    <span>6. 当社は、個人情報に関して適用される法令、規範を遵守するとともに、上記の項目における取り組みを適宜見直し、改善していきます。</span><br><br>
+                    <span>株式会社エフエムもりぐち</span>
+                </div>
               </div>
               `
       }
