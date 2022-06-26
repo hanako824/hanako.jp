@@ -1,4 +1,4 @@
-import { topic, archive, news, banner, headerImg } from './controller.js'
+import { topic, archive, news, banner, headerImg } from '../controller.js'
 
 // data
 const videoLink = 'https://www.youtube.com/embed/Uddh4TrCotY'
