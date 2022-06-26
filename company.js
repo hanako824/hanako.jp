@@ -232,7 +232,7 @@
               <div class="mid-companyInfo-container-item areaFix-item" style="border-top: 1px solid rgba(172, 172, 172, 0.473);">
               <div class="mid-companyInfo-container-left areaFix-left">守口市、門真市をメインターゲットに<br><br>北は、枚方市、高槻市。<br><br>南は、生野区、東大阪市。東は、四条畷市。<br><br>西は、東淀川区、都島区まで。</div>
               <div class="mid-companyInfo-container-right areaFix-right">
-                  <img src="./img/area.jpg" />
+                  <img class="areaImg" src="./img/area.jpg" />
               </div>
               </div>
               `
@@ -243,8 +243,8 @@
 
         companyInfo.innerHTML = `
               <div class="mid-companyInfo-container-item" style="border-top: 1px solid rgba(172, 172, 172, 0.473);">
-                <div class="mid-companyInfo-container-left">個人情報保護基本方針</div>
-                <div class="mid-companyInfo-container-right">
+                <div class="mid-companyInfo-container-left infFix-left">個人情報保護基本方針</div>
+                <div class="mid-companyInfo-container-right infFix-right">
                     <span>株式会社エフエムもりぐち（以下「当社」という。）は、聴取者等のプライバシーを尊重し、以下の基本方針にしたがって個人情報の保護を行います。</span><br><br>
                     <span>1. 当社は、聴取者等より個人情報を取得する場合、利用目的をできる限り特定したうえで、必要な範囲の個人情報を取得します。</span><br><br>
                     <span>2. 当社は、聴取者等の個人情報を利用目的の達成に必要な範囲に限定して利用します。この範囲を超えて個人情報を利用する必要が生じた場合には、法令により許される場合を除き、その利用について、聴取者等の同意を得るものとします。</span><br><br>
