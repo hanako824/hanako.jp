@@ -3,37 +3,37 @@ export const topic = [
 
     // 1個目
     {
-        img: './img/Topic/1.',
-        title: 'How to Own Your Audience by Creating an Email List',
-        description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+        img: './img/Topic/1.jfif',
+        title: 'プロ木クイズ　本日は雨🌧️に関するクイズです。',
+        description: '今日のテーマ「梅雨」のエピソードと共に解答をお待ちしています☔️ クイズだけの参加も大歓迎 ...'
     },
 
     //　2個目
     {
-        img: 'https://images.unsplash.com/photo-1648737155328-0c0012cf2f20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-        title: 'How to Own Your Audience by Creating an Email List',
-        description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+        img: './img/Topic/2.jfif',
+        title: '【 FUN!FUN! シネルフレ 】今日の映画作品は～🎶',
+        description: '「峠 最後のサムライ」「メタモルフォーゼの縁側」「炎の少女チャーリー」「エリザベス 女王陛下の微笑み」...'
     },
 
     // 3個目
     {
-        img: 'https://images.unsplash.com/photo-1648809644635-951fa3c27440?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-        title: 'How to Own Your Audience by Creating an Email List',
-        description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+        img: './img/Topic/3.jfif',
+        title: 'プロ木クイズ　本日は和菓子の日！ということで金平糖についてのクイズです。',
+        description: '「金平糖を初めて食べた日本人は？」①織田信長 ②豊臣秀吉 ③徳川家康。もちろん！クイズだけの参加も大歓迎...'
     },
 
     // 4個目
     {
-        img: 'https://images.unsplash.com/photo-1648737119359-510d4f551382?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80',
-        title: 'How to Own Your Audience by Creating an Email List',
-        description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+        img: './img/Topic/4.jfif',
+        title: '明後日放送のFM HANAKO 仕事バンバンRADIOの収録をしました！',
+        description: '今回は機器の事情で生放送でなく、応援メッセージへのお返事ができなかったのがちょっと寂しい😢 今回は、...'
     },
 
     // 5個目
     {
-        img: 'https://images.unsplash.com/photo-1648748005716-f52ba766054d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80',
-        title: 'How to Own Your Audience by Creating an Email List',
-        description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+        img: './img/Topic/5.jfif',
+        title: 'さわやかワイド82.4 Part1　START！🏃‍♂️🏃🏻💨💨',
+        description: '今日は八尾から放送中！！！10時からアリオ八尾「アリスタ」で待ってるよー！...'
     }
 ]
 // -----------------------トピック 終了-----------------------
