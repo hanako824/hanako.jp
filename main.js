@@ -459,6 +459,8 @@ function getDirection() {
 
   const myModalContainerBloglist = document.querySelector('.myModal-container-bloglist')
 
+  const modalIfame = document.querySelector('.myModal-container-video-i')
+
   const handleShowBlog = () => {
     modal.style.display = 'flex'
 
@@ -521,6 +523,7 @@ function getDirection() {
 
   close.onclick = () => {
     modal.style.display = 'none'
+
+    modalIfame.src = ''
   }
-  
 })()
