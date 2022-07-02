@@ -364,7 +364,7 @@ function getDirection() {
   })
 
   htmlMonth.forEach(element => {
-    let m = now.getMonth()
+    let m = now.getMonth()+1
 
     element.innerHTML = m
   })
@@ -384,7 +384,7 @@ function getDirection() {
   })
 
   htmlMonthMobile.forEach(element => {
-    let m = now.getMonth()
+    let m = now.getMonth()+1
 
     element.innerHTML = m
   })
