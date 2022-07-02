@@ -1372,7 +1372,7 @@ p{
 }
 .iframe-container{
     width: 400px;
-    height: 440px;
+    height: 530px;
 }
 .iframe-nav{
     color: white;
@@ -1953,7 +1953,6 @@ p{
     }
     .iframe-container{
         width: 95%;
-        height: 440px;
     }
     @keyframes menu-bar01 {
         0% {
@@ -2035,10 +2034,5 @@ p{
 @media (max-width: 420px){
     .header-marquee-span{
         font-size: 12px;
-    }
-}
-@media (max-width: 390px){
-    .iframe-container{
-        height: 400px;
     }
 }
