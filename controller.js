@@ -192,5 +192,5 @@ export const banner = [
 // -----------------------バナー 終了-----------------------
 
 // トップ画像スタート
-export const headerImg = './img/slide-3.jpg'
+export const headerImg = './img/hanako.jpg'
 // -----------------------トップ画像 終了-----------------------
