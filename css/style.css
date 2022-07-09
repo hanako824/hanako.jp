@@ -1572,7 +1572,7 @@ p{
     /* border: 1px solid rgba(255, 0, 0, 0.2); */
 }
 .perCol{
-    border: 1px solid rgb(255, 0, 0, 0.2);
+    /* border: 1px solid rgb(255, 0, 0, 0.2); */
     height: 250px;
     margin-bottom: 2rem;
     position: relative;
@@ -1586,7 +1586,7 @@ p{
     left: 0;
     width: 100%;
     height: 70px;
-    background: rgba(128, 128, 128);
+    background: rgb(58, 164, 183);
     z-index: 1;
 }
 .perCol-container{
@@ -1600,7 +1600,14 @@ p{
     justify-content: center;
     align-items: center;
 }
-
+.perCol-container-ring{
+    height: 200px;
+    width: 200px;
+    border-radius: 100rem;
+    background: white;
+    border: 1px solid rgba(58, 164, 183, 0.5);
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+}
 
 
 
