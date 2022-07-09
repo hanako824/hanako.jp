@@ -1566,15 +1566,40 @@ p{
     width: 100%;
     display: flex;
     justify-content: center;
-    align-content: center;
 }
 .personality-container{
     width: 1540px;
-    height: 1500px;
-    border: rgba(255, 0, 0, 0.2);
+    /* border: 1px solid rgba(255, 0, 0, 0.2); */
 }
-
-
+.perCol{
+    border: 1px solid rgb(255, 0, 0, 0.2);
+    height: 250px;
+    margin-bottom: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.perCol-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(128, 128, 128);
+    z-index: 1;
+}
+.perCol-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -1667,6 +1692,9 @@ p{
     }
     .banner-container-main{
         width: 1120px;
+    }
+    .personality-container{
+        width: 95%;
     }
 }
 @media screen and (max-width: 1500px) {
