@@ -1605,8 +1605,9 @@ p{
     width: 200px;
     border-radius: 100rem;
     background: white;
-    border: 1px solid rgba(58, 164, 183, 0.5);
-    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+    /* border: 1px solid rgba(58, 164, 183, 0.5); */
+    border: 1px solid rgba(80, 80, 80, 0.2);
+    box-shadow: 3px 3px 7px rgba(80, 80, 80, 0.4);
 }
 
 
