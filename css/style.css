@@ -1608,8 +1608,13 @@ p{
     /* border: 1px solid rgba(58, 164, 183, 0.5); */
     border: 1px solid rgba(80, 80, 80, 0.2);
     box-shadow: 3px 3px 7px rgba(80, 80, 80, 0.4);
+    overflow: hidden;
+    text-align: center;
 }
-
+.perCol-container-ring img{
+    width: 80%;
+    object-fit: cover;
+}
 
 
 
