@@ -1609,10 +1609,9 @@ p{
     border: 1px solid rgba(80, 80, 80, 0.2);
     box-shadow: 3px 3px 7px rgba(80, 80, 80, 0.4);
     overflow: hidden;
-    text-align: center;
 }
 .perCol-container-ring img{
-    width: 80%;
+    width: 100%;
     object-fit: cover;
 }
 
