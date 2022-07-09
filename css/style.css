@@ -1561,7 +1561,18 @@ p{
     width: 95%;
     margin: 0 auto;
 }
-
+/* -------------- */
+.personality{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.personality-container{
+    width: 1540px;
+    height: 1500px;
+    border: rgba(255, 0, 0, 0.2);
+}
 
 
 

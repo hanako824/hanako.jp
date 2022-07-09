@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <title>FM HANAKO 82.4</title>
+</head>
+<body>
+    <!--Header start-->
+    <div class="header-nav">
+        <a href="./index.html" class="header-nav-logo-a">
+            <div class="header-nav-logo">
+                <div style="display: flex;">
+                    <div class="title-h1-div d1">F</div>
+                    <div class="title-h1-div d2">M</div>
+                    <div class="title-h1-div d3">-</div>
+                    <div class="title-h1-div d4">H</div>
+                    <div class="title-h1-div d5">A</div>
+                    <div class="title-h1-div d6">N</div>
+                    <div class="title-h1-div d7">A</div>
+                    <div class="title-h1-div d8">K</div>
+                    <div class="title-h1-div d10">O</div>
+                    <div>&nbsp;</div>
+                    <div class="title-h1-div d12">8</div>
+                    <div class="title-h1-div d14">2</div>
+                    <div class="title-h1-div d16">4</div>
+                </div>
+            </div>
+        </a>
+
+        <div class="header-nav-items">
+            <a href="https://twitter.com/FM_HANAKO" target="_blank"><div class="header-nav-item">
+                Twitter
+            </div></a>
+
+            <a href="./calendar.html"><div class="header-nav-item">
+                番組表
+            </div></a>
+
+            <a href="./req/index.html"><div class="header-nav-item">
+                リクエスト
+            </div></a>
+
+            <div class="header-nav-item-container">
+                <button class="menu-trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-nav-plus">
+        <div class="header-nav-plus-item">
+            <div class="header-nav-plus-item-container">
+                <div class="___-title">
+                    <i class="fa-solid fa-arrow-down-a-z"></i>&nbsp;Contents
+                </div>
+
+                <div class="___-item">
+                    <a href="./index.html#topic" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; Topic</a>
+                </div>
+
+                <div class="___-item">
+                    <a href="./index.html#archive" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; アーカイブ</a>
+                </div>
+
+                <div class="___-item">
+                    <a href="./calendar.html" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; 番組表</a>
+                </div>
+
+                <div class="___-item">
+                    <a href="./index.html#sns" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; SNS アカウント</a>
+                </div>
+
+                <div class="___-item">
+                    <a href="./index.html#news" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; お知らせ</a>
+                </div>
+
+                <div class="___-item">
+                    <a href="./index.html#banner" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; バナー</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-nav-plus-item">
+            <div class="header-nav-plus-item-container">
+                <div class="___-title">
+                    <i class="fa-solid fa-building"></i>&nbsp;Company
+                </div>
+
+                <div class="___-item">
+                    <a href="./company.html"><i class="fa-solid fa-angle-right"></i> &nbsp; 会社概要</a>
+                </div>
+
+                <div class="___-item">
+                    <a><i class="fa-solid fa-angle-right"></i> &nbsp; パーソナリティ</a>
+                </div>
+
+                <div class="___-item">
+                    <a><i class="fa-solid fa-angle-right"></i> &nbsp; スポンサー・業務案内</a>
+                </div>
+
+                <div class="___-item">
+                    <a><i class="fa-solid fa-angle-right"></i> &nbsp; リンク集</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-nav-plus-item">
+            <div class="header-nav-plus-item-container">
+                <div class="___-title">
+                    <i class="fa-solid fa-icons"></i>&nbsp;Social Media
+                </div>
+
+                <div class="___-link">
+                    <div class="___-link-item">
+                        <a href="https://www.facebook.com/FM-HANAKO-824MHz-118094781711098/?ref=bookmarks" target="_blank"><i class="fa-brands fa-facebook" style="color: #1876f2;"></i></a>
+                    </div>
+
+                    <div class="___-link-item">
+                        <a href="https://twitter.com/FM_HANAKO" target="_blank"><i class="fa-brands fa-twitter" style="color: #1d9bf0;"></i></a>
+                    </div>
+
+                    <div class="___-link-item">
+                        <a href="https://www.youtube.com/channel/UCn_yT7Dyb97dkrTIjsuME9A" target="_blank"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></a>
+                    </div>
+
+                    <div class="___-link-item">
+                        <a href=""><i class="fa-solid fa-book-open" style="color: #00b478;"></i></a>
+                    </div>
+                </div>
+
+                <div class="___-item">
+                    <a href="./index.html"><i class="fa-solid fa-angle-right"></i> &nbsp; ホーム</a>
+                </div>
+
+                <div class="___-item">
+                    <a href="./req/index.html"><i class="fa-solid fa-angle-right"></i> &nbsp; リクエスト</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-nav-plus-mobile">
+        <div class="header-nav-plus-mobile-container">
+            <div class="header-nav-plus-mobile-container-item">
+                <div class="___-title-mobile">
+                    <i class="fa-solid fa-arrow-down-a-z"></i>&nbsp;Contents
+                </div>
+                <div class="___-item-mobile">
+                    <a href="./index.html#topic" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; Topic</a>
+                </div>
+    
+                <div class="___-item-mobile">
+                    <a href="./index.html#archive" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; アーカイブ</a>
+                </div>
+    
+                <div class="___-item-mobile">
+                    <a href="./index.html#calendar" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; 番組表</a>
+                </div>
+    
+                <div class="___-item-mobile">
+                    <a href="./index.html#sns" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; SNS アカウント</a>
+                </div>
+    
+                <div class="___-item-mobile">
+                    <a href="./index.html#news" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; お知らせ</a>
+                </div>
+    
+                <div class="___-item-mobile">
+                    <a href="./index.html#banner" onclick="handleToggle()"><i class="fa-solid fa-angle-right"></i> &nbsp; バナー</a>
+                </div>
+            </div>
+
+            <div class="header-nav-plus-mobile-container-item">
+                <div class="___-title-mobile">
+                    <i class="fa-solid fa-building"></i>&nbsp;Company
+                </div>
+
+                <div class="___-item">
+                    <a href="./company.html"><i class="fa-solid fa-angle-right"></i> &nbsp; 会社概要</a>
+                </div>
+
+                <div class="___-item">
+                    <a><i class="fa-solid fa-angle-right"></i> &nbsp; パーソナリティ</a>
+                </div>
+
+                <div class="___-item">
+                    <a><i class="fa-solid fa-angle-right"></i> &nbsp; スポンサー・業務案内</a>
+                </div>
+
+                <div class="___-item">
+                    <a><i class="fa-solid fa-angle-right"></i> &nbsp; リンク集</a>
+                </div>
+            </div>
+
+            <div class="header-nav-plus-mobile-container-item">
+                <div class="___-title-mobile">
+                    <i class="fa-solid fa-icons"></i>&nbsp;Social Media
+                </div>
+
+                <div class="___-link-mobile">
+                    <div class="___-link-item-mobile">
+                        <a href="https://www.facebook.com/FM-HANAKO-824MHz-118094781711098/?ref=bookmarks" target="_blank"><i class="fa-brands fa-facebook" style="color: #1876f2;"></i></a>
+                    </div>
+
+                    <div class="___-link-item-mobile">
+                        <a href="https://twitter.com/FM_HANAKO" target="_blank"><i class="fa-brands fa-twitter" style="color: #1d9bf0;"></i></a>
+                    </div>
+
+                    <div class="___-link-item-mobile">
+                        <a href="https://www.youtube.com/channel/UCn_yT7Dyb97dkrTIjsuME9A" target="_blank"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></a>
+                    </div>
+
+                    <div class="___-link-item-mobile">
+                        <a href=""><i class="fa-solid fa-book-open" style="color: #00b478;"></i></a>
+                    </div>
+                </div>
+
+                <div class="___-item-mobile">
+                    <a href="./index.html"><i class="fa-solid fa-angle-right"></i> &nbsp; ホーム</a>
+                </div>
+
+                <div class="___-item-mobile">
+                    <a href="./req/index.html"><i class="fa-solid fa-angle-right"></i> &nbsp; リクエスト</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="req-header">
+        <!--Content before waves-->
+        <div class="req-inner-header req-flex">
+            <h1>パーソナリティ</h1>
+        </div>
+  
+        <!--Waves Container-->
+        <div>
+            <svg class="req-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="req-parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+        <!--Waves end-->
+    </div>
+    <!--Header ends-->
+
+    <div class="middle">
+        <div class="personality">
+            <div class="personality-container">
+                
+            </div>
+        </div>
+
+        <div class="footer">
+            © 2022 FM HANAKO 82.4. All rights reserved.
+        </div>
+    </div>    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script type="module" src="./javascript/calendar.js"></script>
+<script src="https://kit.fontawesome.com/aeadcca70a.js" crossorigin="anonymous"></script>
+<script src="./jquery/jquery.inview.min.js"></script>
+<script>
+    $(function() {
+      $('.z').on('inview', function(event, isInView){
+        if (isInView) {
+            $(this).addClass('title-h1-div');
+        } else {
+            $(this).removeClass('title-h1-div');
+        }
+      });
+    });
+</script>
+</html>
