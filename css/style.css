@@ -1652,8 +1652,7 @@ p{
     align-items: center;
 }
 .perModal-container{
-    width: 650px;
-    height: 300px;
+    width: 600px;
     background: white;
     border-radius: 15px;
 }
@@ -1691,15 +1690,20 @@ p{
     transform: translateX(250px);
 }
 .perModal-container-header-title-name{
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
-.perModal-container-header-title-program{
+/* .perModal-container-header-title-program{
     
+} */
+.perModal-container-middle{
+    width: 100%;
+    padding: 1rem;
 }
-
-
+.perModal-container-middle-word{
+    margin-top: 1rem;
+}
 
 
 
