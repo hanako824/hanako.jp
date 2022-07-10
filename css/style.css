@@ -1569,10 +1569,9 @@ p{
 }
 .personality-container{
     width: 1540px;
-    /* border: 1px solid rgba(255, 0, 0, 0.2); */
 }
 .perCol{
-    /* border: 1px solid rgb(255, 0, 0, 0.2); */
+    border: 1px solid rgb(255, 0, 0, 0.2);
     height: 250px;
     margin-bottom: 2rem;
     position: relative;
@@ -1596,12 +1595,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all .4s ease;
     /* border: 1px solid red; */
-}
-.perCol-container:hover{
-    cursor: pointer;
-    transform: translateY(-10%);
 }
 .perCol-container-ring{
     height: 200px;
@@ -1613,6 +1607,11 @@ p{
     box-shadow: 3px 3px 7px rgba(80, 80, 80, 0.4);
     overflow: hidden;
     text-align: center;
+    transition: all .4s ease;
+}
+.perCol-container-ring:hover{
+    cursor: pointer;
+    transform: translateY(-10%);
 }
 .perCol-container-ring img{
     width: 100%;
@@ -1625,12 +1624,14 @@ p{
     width: 100%;
     height: 70px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     z-index: 2;
+    transition: all 0.4s ease;
 }
-
-
+.perCol-container-ring:hover > .perCol-name{
+    display: none !important;
+}
 
 
 
