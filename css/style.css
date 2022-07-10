@@ -2100,6 +2100,13 @@ p{
     .header-nav-plus-mobile{
         display: flex;
     }
+    .perCol-container-ring{
+        transform: translateY(-15%);
+    }
+    .perCol-container-name{
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 @media (max-width: 435px) {
     .areaImg{
