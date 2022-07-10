@@ -1570,6 +1570,9 @@ p{
 .personality-container{
     width: 1540px;
 }
+.perRow{
+    width: 100%;
+}
 .perCol{
     /* border: 1px solid rgb(255, 0, 0, 0.2); */
     height: 250px;
@@ -1723,6 +1726,8 @@ p{
     }
     .personality-container{
         width: 95%;
+        display: flex;
+        justify-content: center;
     }
 }
 @media screen and (max-width: 1500px) {
