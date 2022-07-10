@@ -1571,7 +1571,7 @@ p{
     width: 1540px;
 }
 .perCol{
-    border: 1px solid rgb(255, 0, 0, 0.2);
+    /* border: 1px solid rgb(255, 0, 0, 0.2); */
     height: 250px;
     margin-bottom: 2rem;
     position: relative;
@@ -1611,13 +1611,13 @@ p{
 }
 .perCol-container-ring:hover{
     cursor: pointer;
-    transform: translateY(-10%);
+    transform: translateY(-15%);
 }
 .perCol-container-ring img{
     width: 100%;
     object-fit: cover;
 }
-.perCol-name{
+.perCol-container-name{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1627,10 +1627,14 @@ p{
     align-items: center;
     justify-content: center;
     z-index: 2;
-    transition: all 0.4s ease;
+    transition: all .4s ease;
+    transition-delay: .1s;
+    opacity: 0;
+    transform: translateY(30%);
 }
-.perCol-container-ring:hover > .perCol-name{
-    display: none !important;
+.perCol-container-ring:hover + .perCol-container-name{
+    opacity: 1;
+    transform: translateY(0%);
 }
 
 
