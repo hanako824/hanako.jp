@@ -1655,6 +1655,7 @@ p{
     width: 600px;
     background: white;
     border-radius: 15px;
+    position: relative;
 }
 .perModal-container-header{
     width: 100%;
@@ -1704,8 +1705,27 @@ p{
 .perModal-container-middle-word{
     margin-top: 1rem;
 }
-
-
+.perModal-container-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background: white;
+    color: rgb(245, 124, 124);
+    border: 1px solid rgba(80, 80, 80, 0.2);
+    box-shadow: 3px 3px 7px rgba(80, 80, 80, 0.4);
+    border-radius: 100rem;
+    transform: translate(10px, -10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.perModal-container-close:hover{
+    cursor: pointer;
+    color: white;
+    background: rgb(245, 124, 124);
+}
 
 
 
