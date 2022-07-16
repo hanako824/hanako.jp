@@ -1,4 +1,4 @@
-import { personality } from '../controller.js'
+import { personality, personalityInfo } from '../controller.js'
 
 // Nav Plus
 ;(() => {
@@ -87,7 +87,7 @@ import { personality } from '../controller.js'
     return `
       <div class="col col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 perCol">
         <div class="perCol-container">
-          <div class="perCol-container-ring">
+          <div class="perCol-container-ring" perName='${element.personalityName}'>
               <img style="width: ${element.w};" src="${element.img}" alt="">
           </div>
 
@@ -109,11 +109,21 @@ import { personality } from '../controller.js'
 
   const perModal = document.querySelector('.perModal')
   
-  const 
+  const close = document.querySelector('.perModal-container-close')
 
   rings.forEach(element => {
     element.onclick = () => {
       perModal.style.display = 'flex'
+
+      const perName = element.attributes.perName.value
+
+      personalityInfo.map(() => {
+        
+      })
     }
   })
+
+  close.onclick = () => {
+    perModal.style.display = 'none'
+  }
 })()

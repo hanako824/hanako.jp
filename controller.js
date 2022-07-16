@@ -268,4 +268,21 @@ export const personality = [
         personalityName: '西田ゆい'
     },
 ]
+
+export const personalityInfo = [
+    {
+        name: '岩崎いくよ',
+        w: '80%',
+        program: 'さわやかワイド 82.4!（月曜日）',
+        sns: 'https://twitter.com/iwasaki194',
+        description: '美味しいご飯とお酒が大好き！皆さんとゆるく楽しい時間を過ごしましょう★'
+    },
+    {
+        name: 'quan',
+        w: '80%',
+        program: 'さわやかワイド 82.4!（月曜日）',
+        sns: 'https://twitter.com/iwasaki194',
+        description: 'zzzzzzzzzzzzzzzzzzz'
+    }
+]
 // -----------------------トップ画像 終了-------------------
