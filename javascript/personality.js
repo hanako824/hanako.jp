@@ -111,14 +111,39 @@ import { personality, personalityInfo } from '../controller.js'
   
   const close = document.querySelector('.perModal-container-close')
 
+  // modal
+  const modalImg = document.querySelector('.perModal-container-header-ring-img')
+
+  const modalName = document.querySelector('.perModal-container-header-title-name')
+
+  const modalProgram = document.querySelector('.perModal-container-header-title-program')
+
+  const modalNameMb = document.querySelector('.perModal-container-middle-title-name')
+
+  const modalProgramMb = document.querySelector('.perModal-container-middle-title-program')
+
+  const sns = document.querySelector('.perModal-container-middle-link-a')
+
+  const word = document.querySelector('.perModal-container-middle-word')
+
   rings.forEach(element => {
     element.onclick = () => {
       perModal.style.display = 'flex'
 
       const perName = element.attributes.perName.value
 
-      personalityInfo.map(() => {
-        perName
+      personalityInfo.map(element => {
+        if( element.name == perName ){
+          modalImg.src = element.img
+          modalImg.style.width = element.w
+          modalName.innerHTML = element.name
+          modalNameMb.innerHTML = element.name
+          modalProgram.innerHTML = element.program
+          modalProgramMb.innerHTML = element.program
+          sns.href = element.sns
+          sns.innerHTML = element.sns
+          word.innerHTML = element.description
+        }
       })
     }
   })

@@ -271,6 +271,7 @@ export const personality = [
 
 export const personalityInfo = [
     {
+        img: './img/personality/01さわ(月)岩崎いくよ.jpg',
         name: '岩崎いくよ',
         w: '80%',
         program: 'さわやかワイド 82.4!（月曜日）',
@@ -278,11 +279,12 @@ export const personalityInfo = [
         description: '美味しいご飯とお酒が大好き！皆さんとゆるく楽しい時間を過ごしましょう★'
     },
     {
-        name: 'quan',
-        w: '80%',
-        program: 'さわやかワイド 82.4!（月曜日）',
-        sns: 'https://twitter.com/iwasaki194',
-        description: 'zzzzzzzzzzzzzzzzzzz'
+        img: './img/personality/02さわ(火)圓谷優依.jpg',
+        name: '圓谷優依',
+        w: '90%',
+        program: 'さわやかワイド 82.4!（火曜日）',
+        sns: 'https://twitter.com/tumu_0828',
+        description: '明るく楽しく元気よく！スイーツ大好き娘があなたに笑顔を届けます！'
     }
 ]
 // -----------------------トップ画像 終了-------------------
