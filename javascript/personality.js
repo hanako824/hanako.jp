@@ -118,7 +118,7 @@ import { personality, personalityInfo } from '../controller.js'
       const perName = element.attributes.perName.value
 
       personalityInfo.map(() => {
-        
+        perName
       })
     }
   })
