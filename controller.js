@@ -197,6 +197,75 @@ export const headerImg = './img/hanako.jpg'
 
 // パーソナリティスタート
 export const personality = [
-    
+
+    //　1個目
+    {
+        w: '80%',
+        img: './img/personality/01さわ(月)岩崎いくよ.jpg',
+        personalityName: '岩崎いくよ'
+    },
+
+    //　2個目
+    {
+        w: '90%',
+        img: './img/personality/02さわ(火)圓谷優依.jpg',
+        personalityName: '圓谷優依'
+    },
+
+    //　3個目
+    {
+        w: '110%',
+        img: './img/personality/03さわ(水)加美川千尋.png',
+        personalityName: '加美川千尋'
+    },
+
+    //　4個目
+    {
+        w: '90%',
+        img: './img/personality/04さわ(木)倉田かな.jpg',
+        personalityName: '倉田かな'
+    },
+
+    //　5個目
+    {
+        w: '100%',
+        img: './img/personality/05さわ(金)山田あんず.jpg',
+        personalityName: '山田あんず'
+    },
+
+    //　6個目
+    {
+        w: '80%',
+        img: './img/personality/06プロ(月)林亜由子.jpg',
+        personalityName: '林亜由子'
+    },
+
+    //　7個目
+    {
+        w: '80%',
+        img: './img/personality/07プロ(火)ターキー.jpg',
+        personalityName: 'ターキー'
+    },
+
+    //　8個目
+    {
+        w: '100%',
+        img: './img/personality/personality/08プロ(水)高梨あかり.jpg',
+        personalityName: '高梨あかり'
+    },
+
+    //　9個目
+    {
+        w: '110%',
+        img: './img/personality/09プロ(木)大槻直美.jpg',
+        personalityName: '大槻直美'
+    },
+
+    //　10個目
+    {
+        w: '110%',
+        img: './img/personality/10プロ(金)西田ゆい写真.jpg',
+        personalityName: '西田ゆい'
+    },
 ]
 // -----------------------トップ画像 終了-------------------
