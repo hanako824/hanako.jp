@@ -81,24 +81,39 @@ import { personality } from '../controller.js'
 
 // Personality items
 ;(() => {
+  const perRow = document.querySelector('.perRow')
+
   const html = personality.map(element => {
     return `
-      <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 topic-col ">
-        <div class="topic-col-item">
-          <div class="topic-col-item-head">
-              <img src="${element.img}">
+      <div class="col col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 perCol">
+        <div class="perCol-container">
+          <div class="perCol-container-ring">
+              <img style="width: ${element.w};" src="${element.img}" alt="">
           </div>
 
-          <div class="topic-col-item-description">
-              <div class="topic-col-item-description-top">
-                  ${element.title}
-              </div>
-              <div class="topic-col-item-description-bot">
-                  ${element.description}
-              </div>
+          <div class="perCol-container-name">
+            ${element.personalityName}
           </div>
         </div>
+    
+        <div class="perCol-footer"></div>
       </div>
     `
+  })
+
+  perRow.innerHTML = html.join('')
+})()
+
+;(() => {
+  const rings = document.querySelectorAll('.perCol-container-ring')
+
+  const perModal = document.querySelector('.perModal')
+  
+  const 
+
+  rings.forEach(element => {
+    element.onclick = () => {
+      perModal.style.display = 'flex'
+    }
   })
 })()

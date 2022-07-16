@@ -250,7 +250,7 @@ export const personality = [
     //　8個目
     {
         w: '100%',
-        img: './img/personality/personality/08プロ(水)高梨あかり.jpg',
+        img: './img/personality/08プロ(水)高梨あかり.jpg',
         personalityName: '高梨あかり'
     },
 
