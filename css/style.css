@@ -1324,6 +1324,18 @@ p{
     height: 1px;
     background: rgb(100, 100, 100, .2);
 }
+.middle-onestep{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middle-onestep-container{
+    width: 1260px;
+}
+.middle-onestep-container-item{
+    margin-bottom: 1rem;
+}
 .middle-rule{
     width: 100%;
     display: flex;
