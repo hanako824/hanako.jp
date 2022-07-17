@@ -321,14 +321,54 @@ export const personalityInfo = [
         description: '好きな言葉は「美酒美笑」美味しいお酒大好き！素敵な笑顔でお届けます♪'
     },
 
-    // 山田あんず
+    // 林亜由子
     {
         img: './img/personality/06プロ(月)林亜由子.jpg',
         name: '林亜由子',
         w: '80%',
         program: 'プロムナード 82.4!（月曜日）',
+        sns: 'https://twitter.com/ayuko_hayashi',
+        description: '出産後のHANAKO復帰から約3年。懐かしいも新しいも届けます♡'
+    },
+
+    // ターキー
+    {
+        img: './img/personality/07プロ(火)ターキー.jpg',
+        name: 'ターキー',
+        w: '80%',
+        program: 'プロムナード 82.4!（火曜日）',
         sns: '',
-        description: ''
+        description: 'おしゃべり哲学者。出来不出来よりドキドキ。やっちゃえ、オッサン！'
+    },
+
+    // 高梨あかり
+    {
+        img: './img/personality/08プロ(水)高梨あかり.jpg',
+        name: '高梨あかり',
+        w: '100%',
+        program: 'プロムナード 82.4!（水曜日）',
+        sns: 'https://twitter.com/nashi_aka_taka3',
+        description: '音楽好きが癒しと共に新しい発見に出会える時間をお届けします！'
+    },
+
+    // 大槻直美
+    {
+        img: './img/personality/09プロ(木)大槻直美.jpg',
+        name: '大槻直美',
+        w: '110%',
+        program: 'プロムナード 82.4!（木曜日）',
+        sns: '',
+        description: 'HANAKOのママドル 大槻直美です！あなたの心を癒します （＾＾）v'
+    },
+
+    // 西田ゆい
+    {
+        img: './img/personality/10プロ(金)西田ゆい写真.jpg',
+        name: '西田ゆい',
+        w: '110%',
+        program: 'プロムナード 82.4!（金曜日）',
+        sns: 'https://twitter.com/yuiiii1230',
+        description: 'カラオケと銭湯に行くのが好きです♪ ゆる～い時間を共に過ごしましょう！'
     },
 ]
 // -----------------------トップ画像 終了-------------------
