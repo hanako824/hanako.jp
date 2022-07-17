@@ -1731,6 +1731,14 @@ p{
 .perModal-container-middle-link{
     margin-bottom: 1rem;
 }
+.perModal-container-middle-link-a{
+    text-decoration: none;
+    color: rgb(58, 164, 183);
+}
+.perModal-container-middle-link-a:hover{
+    color: rgb(58, 164, 183);
+    opacity: .7;
+}
 /* .perModal-container-middle-word{
     margin-bottom: 1rem;
 } */
