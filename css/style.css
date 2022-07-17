@@ -1329,9 +1329,13 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 0 1rem 0;
 }
 .middle-onestep-container{
     width: 1260px;
+    border-radius: 5px;
+    border: 1px solid rgb(100, 100, 100, .2);
+    padding: .5rem 3rem .5rem 3rem;
 }
 .middle-onestep-container-item{
     margin-bottom: 1rem;
