@@ -270,6 +270,8 @@ export const personality = [
 ]
 
 export const personalityInfo = [
+
+    // 岩崎いくよ
     {
         img: './img/personality/01さわ(月)岩崎いくよ.jpg',
         name: '岩崎いくよ',
@@ -278,6 +280,8 @@ export const personalityInfo = [
         sns: 'https://twitter.com/iwasaki194',
         description: '美味しいご飯とお酒が大好き！皆さんとゆるく楽しい時間を過ごしましょう★'
     },
+
+    // 圓谷優依
     {
         img: './img/personality/02さわ(火)圓谷優依.jpg',
         name: '圓谷優依',
@@ -285,6 +289,46 @@ export const personalityInfo = [
         program: 'さわやかワイド 82.4!（火曜日）',
         sns: 'https://twitter.com/tumu_0828',
         description: '明るく楽しく元気よく！スイーツ大好き娘があなたに笑顔を届けます！'
-    }
+    },
+
+    // 加美川千尋
+    {
+        img: './img/personality/03さわ(水)加美川千尋.png',
+        name: '加美川千尋',
+        w: '110%',
+        program: 'さわやかワイド 82.4!（水曜日）',
+        sns: 'https://twitter.com/chihirocamikawa',
+        description: '三度の飯とアイドルとお笑いが好きです。週の真ん中、楽しくいきましょう！'
+    },
+
+    // 倉田かな
+    {
+        img: './img/personality/04さわ(木)倉田かな.jpg',
+        name: '倉田かな',
+        w: '90%',
+        program: 'さわやかワイド 82.4!（木曜日）',
+        sns: 'https://twitter.com/kanakurata',
+        description: '守口・門真の楽しくて美味しくて魅力的なところ・人を紹介します！'
+    },
+
+    // 山田あんず
+    {
+        img: './img/personality/05さわ(金)山田あんず.jpg',
+        name: '山田あんず',
+        w: '100%',
+        program: 'さわやかワイド 82.4!（金曜日）',
+        sns: 'https://twitter.com/halohaloanzu',
+        description: '好きな言葉は「美酒美笑」美味しいお酒大好き！素敵な笑顔でお届けます♪'
+    },
+
+    // 山田あんず
+    {
+        img: './img/personality/06プロ(月)林亜由子.jpg',
+        name: '林亜由子',
+        w: '80%',
+        program: 'プロムナード 82.4!（月曜日）',
+        sns: '',
+        description: ''
+    },
 ]
 // -----------------------トップ画像 終了-------------------
