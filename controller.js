@@ -192,7 +192,7 @@ export const banner = [
 // -----------------------バナー 終了-----------------------
 
 // トップ画像スタート
-export const headerImg = './img/hanako.jpg'
+export const headerImg = './img/wood.jpg'
 // -----------------------トップ画像 終了-----------------------
 
 // パーソナリティスタート
