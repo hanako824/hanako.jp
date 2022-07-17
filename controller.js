@@ -337,7 +337,7 @@ export const personalityInfo = [
         name: 'ターキー',
         w: '80%',
         program: 'プロムナード 82.4!（火曜日）',
-        sns: '',
+        sns: 'https://twitter.com/tweeturkey',
         description: 'おしゃべり哲学者。出来不出来よりドキドキ。やっちゃえ、オッサン！'
     },
 
