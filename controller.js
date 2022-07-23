@@ -369,6 +369,6 @@ export const personalityInfo = [
         program: 'プロムナード 82.4!（金曜日）',
         sns: 'https://twitter.com/yuiiii1230',
         description: 'カラオケと銭湯に行くのが好きです♪ ゆる～い時間を共に過ごしましょう！'
-    },
+    },    
 ]
 // -----------------------トップ画像 終了-------------------
