@@ -104,6 +104,7 @@ import { personality, personalityInfo } from '../controller.js'
   perRow.innerHTML = html.join('')
 })()
 
+// Personality modal
 ;(() => {
   const rings = document.querySelectorAll('.perCol-container-ring')
 
